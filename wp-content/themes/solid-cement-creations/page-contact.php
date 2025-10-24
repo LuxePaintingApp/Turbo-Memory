@@ -82,7 +82,7 @@ get_header();
 <section class="page-section">
     <div class="container">
         <span class="section-subtitle"><?php esc_html_e( 'Business Hours', 'solid-cement' ); ?></span>
-        <h2 class="section-title"><?php esc_html_e( 'We\'re Here for You', 'solid-cement' ); ?></h2>
+        <h2 class="section-title"><?php esc_html_e( "We're Here for You", 'solid-cement' ); ?></h2>
         <p><?php esc_html_e( 'Monday – Friday: 8am – 5pm | Saturday: 9am – 2pm | Sunday: By appointment', 'solid-cement' ); ?></p>
         <p><?php esc_html_e( 'Phone: 1300 000 000 | Email: hello@solidcementcreations.com', 'solid-cement' ); ?></p>
         <div class="flex">
