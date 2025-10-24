@@ -48,4 +48,17 @@ get_header();
     </div>
 </section>
 <?php
+get_template_part(
+    'template-parts/components/quote-section',
+    null,
+    [
+        'section_id'  => 'quote',
+        'subtitle'    => __( 'Need a Hand with Your Next Project?', 'solid-cement' ),
+        'title'       => __( 'Chat with Our Artisans', 'solid-cement' ),
+        'copy'        => __( 'Whether it is restoration, custom sculptures, or complete garden styling, we will prepare a tailored quote for you.', 'solid-cement' ),
+        'extra_class' => 'page-section--alt',
+    ]
+);
+?>
+<?php
 get_footer();

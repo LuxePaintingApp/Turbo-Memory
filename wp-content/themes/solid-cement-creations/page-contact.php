@@ -11,7 +11,7 @@ get_header();
 <section class="page-hero">
     <div class="container">
         <h1><?php esc_html_e( 'Contact Solid Cement Creations', 'solid-cement' ); ?></h1>
-        <p><?php esc_html_e( 'Book a consultation, request a quote, or send us feedback.', 'solid-cement' ); ?></p>
+        <p><?php esc_html_e( 'Book a consultation, request a quote, or send us feedback about the finest cement garden statues Australia has to offer.', 'solid-cement' ); ?></p>
     </div>
 </section>
 
@@ -36,7 +36,7 @@ get_header();
                 <button type="submit" class="btn"><?php esc_html_e( 'Send Message', 'solid-cement' ); ?></button>
             </form>
         </div>
-        <div class="contact-card">
+        <div class="contact-card" id="quote">
             <span class="section-subtitle"><?php esc_html_e( 'Booking', 'solid-cement' ); ?></span>
             <h2 class="section-title"><?php esc_html_e( 'Quote Request', 'solid-cement' ); ?></h2>
             <?php get_template_part( 'template-parts/forms/quote' ); ?>

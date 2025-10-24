@@ -11,7 +11,7 @@ get_header();
 <section class="page-hero">
     <div class="container">
         <h1><?php esc_html_e( 'Gnome World', 'solid-cement' ); ?></h1>
-        <p><?php esc_html_e( 'Charming cement gnomes designed to bring a wink of joy to every corner of your garden.', 'solid-cement' ); ?></p>
+        <p><?php esc_html_e( 'Charming cement garden gnomes designed to bring a wink of joy to every corner of your garden.', 'solid-cement' ); ?></p>
     </div>
 </section>
 
@@ -19,6 +19,7 @@ get_header();
     <div class="container">
         <span class="section-subtitle"><?php esc_html_e( 'Featured Gnome Collections', 'solid-cement' ); ?></span>
         <h2 class="section-title"><?php esc_html_e( 'Meet the Crew', 'solid-cement' ); ?></h2>
+        <p class="section-lede"><?php esc_html_e( 'Discover cheeky companions, elegant sprites, and playful cement animal garden statues ready to enliven your landscape.', 'solid-cement' ); ?></p>
         <div class="featured-grid">
             <?php
             $gnome_collections = new WP_Query(
@@ -56,19 +57,22 @@ get_header();
     </div>
 </section>
 
-<section class="page-section page-section--alt">
-    <div class="container media-grid">
-        <div>
-            <span class="section-subtitle"><?php esc_html_e( 'Design Your Own', 'solid-cement' ); ?></span>
-            <h2 class="section-title"><?php esc_html_e( 'Custom Gnomes', 'solid-cement' ); ?></h2>
-            <p><?php esc_html_e( 'Pick a hat, choose a pose, and we will sculpt a gnome that mirrors your personality.', 'solid-cement' ); ?></p>
-            <p><?php esc_html_e( 'Add inspiration photos and notes so our artisans can bring your concept to life.', 'solid-cement' ); ?></p>
-        </div>
-        <div>
-            <?php get_template_part( 'template-parts/forms/quote' ); ?>
-        </div>
-    </div>
-</section>
+<?php
+get_template_part(
+    'template-parts/components/quote-section',
+    null,
+    [
+        'section_id'  => 'quote',
+        'subtitle'    => __( 'Design Your Own', 'solid-cement' ),
+        'title'       => __( 'Custom Gnomes', 'solid-cement' ),
+        'copy'        => [
+            __( 'Pick a hat, choose a pose, and we will sculpt a gnome that mirrors your personality.', 'solid-cement' ),
+            __( 'Add inspiration photos and notes so our artisans can bring your concept to life.', 'solid-cement' ),
+        ],
+        'extra_class' => 'page-section--alt',
+    ]
+);
+?>
 
 <section class="page-section">
     <div class="container">
