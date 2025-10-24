@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <defs>
+        <linearGradient id="fg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#f6d3ff" />
+            <stop offset="100%" stop-color="#ff3fa4" />
+        </linearGradient>
+    </defs>
+    <rect width="800" height="600" fill="url(#fg)" rx="40" />
+    <g fill="#3a3a45" font-family="Arial, sans-serif" text-anchor="middle">
+        <text x="400" y="280" font-size="64">Fairy Garden</text>
+        <text x="400" y="350" font-size="28">Replace with a gallery highlight</text>
+    </g>
+</svg>
