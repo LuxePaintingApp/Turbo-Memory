@@ -34,7 +34,6 @@ add_action( 'after_setup_theme', 'solidcement_setup' );
  */
 function solidcement_scripts() {
     wp_enqueue_style( 'solidcement-style', get_stylesheet_uri(), [], SOLIDCEMENT_VERSION );
-    wp_enqueue_style( 'solidcement-theme', get_template_directory_uri() . '/assets/css/theme.css', [ 'solidcement-style' ], SOLIDCEMENT_VERSION );
     wp_enqueue_script( 'solidcement-theme', get_template_directory_uri() . '/assets/js/theme.js', [], SOLIDCEMENT_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'solidcement_scripts' );
