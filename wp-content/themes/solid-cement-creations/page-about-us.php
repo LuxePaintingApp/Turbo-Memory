@@ -26,6 +26,7 @@ $process_ids = array_filter( array_map( 'trim', explode( ',', (string) get_post_
     <div class="container">
         <span class="section-subtitle"><?php esc_html_e( 'Brand Story', 'solid-cement' ); ?></span>
         <h2 class="section-title"><?php esc_html_e( 'From humble beginnings to luxury garden artistry', 'solid-cement' ); ?></h2>
+        <p class="section-lede"><?php esc_html_e( 'Solid Cement Creations grew from a single kiln into a studio renowned for cement outdoor sculptures that celebrate Australian gardens.', 'solid-cement' ); ?></p>
         <div class="page-content">
             <?php
             while ( have_posts() ) :
@@ -48,7 +49,7 @@ $process_ids = array_filter( array_map( 'trim', explode( ',', (string) get_post_
             <?php if ( $maker_bio ) : ?>
                 <p><?php echo esc_html( $maker_bio ); ?></p>
             <?php else : ?>
-                <p><?php esc_html_e( 'Share your passion for cement artistry and the story behind Solid Cement Creations.', 'solid-cement' ); ?></p>
+                <p><?php esc_html_e( 'Share your passion for cement artistry, the care behind each mould, and what makes your cement outdoor sculptures unique.', 'solid-cement' ); ?></p>
             <?php endif; ?>
         </div>
         <div>
@@ -117,5 +118,18 @@ $process_ids = array_filter( array_map( 'trim', explode( ',', (string) get_post_
         <?php solidcement_render_gallery( 'highlight' ); ?>
     </div>
 </section>
+<?php
+get_template_part(
+    'template-parts/components/quote-section',
+    null,
+    [
+        'section_id'  => 'quote',
+        'subtitle'    => __( 'Book a Consultation', 'solid-cement' ),
+        'title'       => __( 'Bring Your Dream Garden to Life', 'solid-cement' ),
+        'copy'        => __( 'Share your vision and we will curate a tailored plan for your outdoor sanctuary.', 'solid-cement' ),
+        'extra_class' => 'page-section--alt',
+    ]
+);
+?>
 <?php
 get_footer();

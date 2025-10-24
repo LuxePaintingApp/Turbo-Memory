@@ -16,22 +16,29 @@
 <a class="screen-reader-text" href="#primary">Skip to content</a>
 <header class="site-header">
     <div class="container">
-        <div class="site-branding">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <span class="site-title"><?php bloginfo( 'name' ); ?></span>
-            </a>
+        <div class="site-header__inner">
+            <div class="site-branding">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <span class="site-title"><?php bloginfo( 'name' ); ?></span>
+                </a>
+            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
+                <span class="nav-toggle__icon" aria-hidden="true"></span>
+                <span class="nav-toggle__label"><?php esc_html_e( 'Menu', 'solid-cement' ); ?></span>
+            </button>
+            <nav class="primary-navigation" id="primary-menu" aria-label="Primary Navigation" data-primary-nav>
+                <?php
+                wp_nav_menu([
+                    'theme_location' => 'primary',
+                    'container'      => false,
+                    'fallback_cb'    => '__return_false',
+                    'menu_class'     => 'menu-items',
+                ]);
+                ?>
+            </nav>
         </div>
-        <nav class="primary-navigation" aria-label="Primary Navigation">
-            <?php
-            wp_nav_menu([
-                'theme_location' => 'primary',
-                'container'      => false,
-                'fallback_cb'    => '__return_false',
-                'menu_class'     => 'menu-items',
-            ]);
-            ?>
-        </nav>
-        <a class="btn sticky-book-btn" href="#booking">Book a Quote</a>
+        <a class="btn sticky-book-btn" href="#quote"><?php esc_html_e( 'Book a Quote', 'solid-cement' ); ?></a>
     </div>
+    <div class="site-header__overlay" data-nav-overlay></div>
 </header>
 <main id="primary">

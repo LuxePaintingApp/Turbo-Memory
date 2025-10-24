@@ -51,10 +51,10 @@ $hero_query = new WP_Query(
         </div>
         <div class="hero-content">
             <h1><?php esc_html_e( 'Handcrafted Luxury for Your Garden', 'solid-cement' ); ?></h1>
-            <p><?php esc_html_e( 'From whimsical gnomes to immersive fairy gardens, Solid Cement Creations elevates every outdoor space with artisanal finishes.', 'solid-cement' ); ?></p>
+            <p><?php esc_html_e( 'From whimsical gnomes to immersive fairy gardens, our concrete garden ornaments elevate every outdoor space with artisanal finishes.', 'solid-cement' ); ?></p>
             <div class="hero-cta">
                 <a class="btn" href="#signature-creations"><?php esc_html_e( 'Explore Collections', 'solid-cement' ); ?></a>
-                <a class="btn btn--outline" href="#booking"><?php esc_html_e( 'Get a Quote', 'solid-cement' ); ?></a>
+                <a class="btn btn--outline" href="#quote"><?php esc_html_e( 'Get a Quote', 'solid-cement' ); ?></a>
             </div>
         </div>
     </div>
@@ -76,7 +76,7 @@ $hero_query = new WP_Query(
             <article class="why-card">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2L3 5v6c0 5.25 3.438 10.063 9 11 5.563-.938 9-5.75 9-11V5l-9-3zm0 2.18L18.5 6.5v4.5c0 4.344-2.938 8.438-6.5 9.219-3.563-.781-6.5-4.875-6.5-9.219V6.5L12 4.18zM11 8v5h2V8h-2zm0 6v2h2v-2h-2z"/></svg>
                 <h3><?php esc_html_e( 'Luxurious Finishes', 'solid-cement' ); ?></h3>
-                <p><?php esc_html_e( 'Every piece is sealed with premium coatings for a satin sheen built to withstand Australian summers.', 'solid-cement' ); ?></p>
+            <p><?php esc_html_e( 'Every piece is sealed with premium coatings for a satin sheen built to withstand Australian summers and keep your concrete garden ornaments glowing.', 'solid-cement' ); ?></p>
             </article>
             <article class="why-card">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.09 6.26H21l-5.17 3.76 1.98 6.12L12 15.77l-5.81 3.37 1.98-6.12L3 9.26h6.91z"/></svg>
@@ -112,6 +112,20 @@ $hero_query = new WP_Query(
 </section>
 
 <?php get_template_part( 'template-parts/components/testimonial-slider' ); ?>
+
+<?php
+get_template_part(
+    'template-parts/components/quote-section',
+    null,
+    [
+        'section_id'  => 'quote',
+        'subtitle'    => __( 'Detailed Quote', 'solid-cement' ),
+        'title'       => __( 'Plan Your Custom Creation', 'solid-cement' ),
+        'copy'        => __( 'Tell us about your garden, the finishes you love, and the pieces that caught your eye. Our team will reply with a personalised concept and pricing guide.', 'solid-cement' ),
+        'extra_class' => 'page-section--alt',
+    ]
+);
+?>
 
 <section class="blog-preview">
     <div class="container">

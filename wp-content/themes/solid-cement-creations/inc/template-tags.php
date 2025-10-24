@@ -99,15 +99,38 @@ if ( ! function_exists( 'solidcement_render_before_after' ) ) {
         );
 
         if ( $projects->have_posts() ) {
-            echo '<div class="media-grid">';
+            echo '<div class="before-after-grid">';
             while ( $projects->have_posts() ) {
                 $projects->the_post();
-                echo '<article class="feature-card">';
-                if ( has_post_thumbnail() ) {
-                    the_post_thumbnail( 'large' );
+                $before_id = get_post_meta( get_the_ID(), 'solidcement_before_image', true );
+                echo '<article class="before-after-card">';
+
+                $before_image = $before_id ? wp_get_attachment_image( $before_id, 'large', false, [ 'class' => 'before-after__image before-after__image--before' ] ) : '';
+                $after_image  = has_post_thumbnail() ? get_the_post_thumbnail( get_the_ID(), 'large', [ 'class' => 'before-after__image before-after__image--after' ] ) : '';
+
+                if ( $before_image && $after_image ) {
+                    echo '<div class="before-after" data-before-after>';
+                    echo '<div class="before-after__media">';
+                    echo $before_image; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                    echo $after_image;  // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                    echo '<div class="before-after__divider" aria-hidden="true"></div>';
+                    echo '</div>';
+                    echo '<input type="range" min="0" max="100" value="50" class="before-after__slider" data-before-after-range aria-label="' . esc_attr__( 'Reveal the restored finish', 'solid-cement' ) . '">';
+                    echo '</div>';
+                } elseif ( $after_image ) {
+                    echo '<figure class="before-after__media">';
+                    echo $after_image; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                    echo '</figure>';
+                } else {
+                    echo '<p>' . esc_html__( 'Add before and after images to highlight this restoration.', 'solid-cement' ) . '</p>';
                 }
+
+                echo '<div class="before-after__details">';
                 echo '<h3>' . esc_html( get_the_title() ) . '</h3>';
-                the_excerpt();
+                if ( has_excerpt() ) {
+                    echo '<p>' . esc_html( wp_trim_words( get_the_excerpt(), 32 ) ) . '</p>';
+                }
+                echo '</div>';
                 echo '</article>';
             }
             echo '</div>';

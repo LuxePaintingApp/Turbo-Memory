@@ -11,7 +11,7 @@ get_header();
 <section class="page-hero">
     <div class="container">
         <h1><?php esc_html_e( 'Garden Design Services', 'solid-cement' ); ?></h1>
-        <p><?php esc_html_e( 'Elegant outdoor concepts that balance structure, planting, and bespoke cement features.', 'solid-cement' ); ?></p>
+        <p><?php esc_html_e( 'Elegant outdoor concepts that balance structure, planting, and custom cement garden statues.', 'solid-cement' ); ?></p>
     </div>
 </section>
 
@@ -38,7 +38,7 @@ get_header();
             </article>
             <article class="process-step">
                 <h3><?php esc_html_e( 'Create', 'solid-cement' ); ?></h3>
-                <p><?php esc_html_e( 'Our artisans pour, sculpt, and finish every cement detail with precision.', 'solid-cement' ); ?></p>
+                <p><?php esc_html_e( 'Our artisans pour, sculpt, and finish every cement detail with precision, from paving to custom cement garden statues.', 'solid-cement' ); ?></p>
             </article>
             <article class="process-step">
                 <h3><?php esc_html_e( 'Install', 'solid-cement' ); ?></h3>
@@ -75,5 +75,18 @@ get_header();
         </div>
     </div>
 </section>
+<?php
+get_template_part(
+    'template-parts/components/quote-section',
+    null,
+    [
+        'section_id'  => 'quote',
+        'subtitle'    => __( 'Book a Design Consultation', 'solid-cement' ),
+        'title'       => __( 'Schedule Your Garden Masterplan', 'solid-cement' ),
+        'copy'        => __( 'Outline your dream landscape, and we will prepare mood boards, layouts, and investment options tailored to your space.', 'solid-cement' ),
+        'extra_class' => 'page-section--alt',
+    ]
+);
+?>
 <?php
 get_footer();

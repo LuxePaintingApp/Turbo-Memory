@@ -34,4 +34,17 @@ get_header();
     </div>
 </section>
 <?php
+get_template_part(
+    'template-parts/components/quote-section',
+    null,
+    [
+        'section_id'  => 'quote',
+        'subtitle'    => __( 'Inspired by What You Read?', 'solid-cement' ),
+        'title'       => __( 'Book a Quote for Your Garden Project', 'solid-cement' ),
+        'copy'        => __( 'Turn these ideas into a reality with a personalised consultation from our team.', 'solid-cement' ),
+        'extra_class' => 'page-section--alt',
+    ]
+);
+?>
+<?php
 get_footer();

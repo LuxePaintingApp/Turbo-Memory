@@ -11,7 +11,7 @@ get_header();
 <section class="page-hero">
     <div class="container">
         <h1><?php esc_html_e( 'Restorations & Repairs', 'solid-cement' ); ?></h1>
-        <p><?php esc_html_e( 'Renew beloved cement pieces with colour-matched finishes and artisan care.', 'solid-cement' ); ?></p>
+        <p><?php esc_html_e( 'Renew beloved large cement garden ornaments with colour-matched finishes and artisan care.', 'solid-cement' ); ?></p>
     </div>
 </section>
 
@@ -34,7 +34,7 @@ get_header();
             </article>
             <article class="feature-card">
                 <h3><?php esc_html_e( 'Faded Gnomes', 'solid-cement' ); ?></h3>
-                <p><?php esc_html_e( 'Colour matching, hand-painting, and protective sealing to revive your characters.', 'solid-cement' ); ?></p>
+                <p><?php esc_html_e( 'Colour matching, hand-painting, and protective sealing to revive your characters and cherished cement angel garden statues.', 'solid-cement' ); ?></p>
             </article>
             <article class="feature-card">
                 <h3><?php esc_html_e( 'Chipped Bird Baths', 'solid-cement' ); ?></h3>
@@ -44,7 +44,7 @@ get_header();
     </div>
 </section>
 
-<section class="page-section" id="restoration-quote">
+<section class="page-section" id="quote">
     <div class="container media-grid">
         <div>
             <span class="section-subtitle"><?php esc_html_e( 'Quote Form', 'solid-cement' ); ?></span>

@@ -11,7 +11,7 @@ get_header();
 <section class="page-hero">
     <div class="container">
         <h1><?php esc_html_e( 'Fairy Garden Experiences', 'solid-cement' ); ?></h1>
-        <p><?php esc_html_e( 'Whimsical landscapes designed with layered textures, lighting, and storytelling elements.', 'solid-cement' ); ?></p>
+        <p><?php esc_html_e( 'Whimsical landscapes designed with layered textures, lighting, and weatherproof cement garden decor.', 'solid-cement' ); ?></p>
     </div>
 </section>
 
@@ -65,17 +65,30 @@ get_header();
     </div>
 </section>
 
-<section class="page-section" id="fairy-booking">
+<section class="page-section" id="booking">
     <div class="container media-grid">
         <div>
             <span class="section-subtitle"><?php esc_html_e( 'Booking', 'solid-cement' ); ?></span>
             <h2 class="section-title"><?php esc_html_e( 'Bring the Magic of Fairy Garden to Your Home', 'solid-cement' ); ?></h2>
-            <p><?php esc_html_e( 'We create bespoke layouts that balance botanicals, lighting, and miniature storytelling props.', 'solid-cement' ); ?></p>
+            <p><?php esc_html_e( 'We create bespoke layouts that balance botanicals, lighting, and weatherproof cement garden decor built to sparkle after every rain.', 'solid-cement' ); ?></p>
         </div>
         <div>
             <?php get_template_part( 'template-parts/forms/booking' ); ?>
         </div>
     </div>
 </section>
+<?php
+get_template_part(
+    'template-parts/components/quote-section',
+    null,
+    [
+        'section_id'  => 'quote',
+        'subtitle'    => __( 'Custom Fairy Garden Quote', 'solid-cement' ),
+        'title'       => __( 'Design an Enchanted Retreat', 'solid-cement' ),
+        'copy'        => __( 'Tell us about the space you are styling and we will propose a layout with lighting, pathways, and whimsical sculptures.', 'solid-cement' ),
+        'extra_class' => 'page-section--alt',
+    ]
+);
+?>
 <?php
 get_footer();
