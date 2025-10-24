@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved.</p>
+            <p>&copy; <?php echo esc_html( current_time( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved.</p>
         </div>
     </div>
 </footer>
