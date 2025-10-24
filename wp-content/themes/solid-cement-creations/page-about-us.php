@@ -99,7 +99,7 @@ $process_ids = array_filter( array_map( 'trim', explode( ',', (string) get_post_
             <?php endif; ?>
             <?php if ( $values ) : ?>
                 <ul>
-                    <?php foreach ( explode( '\n', $values ) as $value ) : ?>
+                    <?php foreach ( preg_split( '/\r\n|\r|\n/', $values ) as $value ) : ?>
                         <?php if ( trim( $value ) ) : ?>
                             <li><?php echo esc_html( $value ); ?></li>
                         <?php endif; ?>
