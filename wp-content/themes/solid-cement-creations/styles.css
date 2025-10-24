@@ -1,0 +1,6 @@
+/*
+ * This auxiliary stylesheet ensures hosts expecting a `styles.css`
+ * entry point can still load the primary theme styles.
+ * It simply imports the official WordPress `style.css` bundle.
+ */
+@import url('./style.css');
