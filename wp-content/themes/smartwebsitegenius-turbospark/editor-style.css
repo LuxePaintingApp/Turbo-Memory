@@ -1,0 +1,29 @@
+:root {
+    --swg-orange: #ff7a00;
+    --swg-yellow: #ffd600;
+    --swg-blue: #0055ff;
+    --swg-red: #ff3b30;
+    --swg-dark: #0a0a0a;
+    --swg-text: #1d1d1f;
+}
+
+body.block-editor-page .editor-styles-wrapper {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    color: var(--swg-text);
+}
+
+a {
+    color: var(--swg-blue);
+}
+
+a:hover,
+a:focus {
+    color: var(--swg-red);
+}
+
+.wp-block-button__link {
+    background: linear-gradient(135deg, var(--swg-blue), var(--swg-red));
+    border-radius: 18px;
+    padding: 0.85rem 1.65rem;
+    font-weight: 700;
+}

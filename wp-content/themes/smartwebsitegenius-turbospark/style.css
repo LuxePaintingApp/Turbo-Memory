@@ -1,0 +1,377 @@
+/*
+Theme Name: SmartWebsiteGenius TurboSpark
+Theme URI: https://smartwebsitegenius.example.com/turbospark
+Author: SmartWebsiteGenius
+Author URI: https://smartwebsitegenius.example.com
+Description: TurboSpark is a super-lightweight, blazing-fast WordPress theme built for SmartWebsiteGenius. It ships with SEO-first controls, Elementor compatibility, a sticky color-rich header, and polished templates for Home, About, Services, Blog, and Contact pages. Designed for effortless branding, child-theme readiness, and seamless plugin support, including Website Skins.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: smartwebsitegenius-turbospark
+Tags: custom-logo, sticky-post, one-column, two-columns, custom-menu, blog, e-commerce, portfolio
+*/
+
+/* CSS Variables for Theme Palette */
+:root {
+    --swg-orange: #ff7a00;
+    --swg-yellow: #ffd600;
+    --swg-blue: #0055ff;
+    --swg-red: #ff3b30;
+    --swg-dark: #0a0a0a;
+    --swg-light: #ffffff;
+    --swg-gray: #f5f5f5;
+    --swg-text: #1d1d1f;
+    --swg-radius: 18px;
+    --swg-transition: all 0.3s ease;
+    --swg-shadow: 0 18px 45px rgba(0, 40, 140, 0.08);
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    background: var(--swg-light);
+    color: var(--swg-text);
+    margin: 0;
+    line-height: 1.7;
+}
+
+a {
+    color: var(--swg-blue);
+    text-decoration: none;
+    transition: var(--swg-transition);
+}
+
+a:hover,
+a:focus {
+    color: var(--swg-red);
+}
+
+/* Layout */
+.site-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(120deg, var(--swg-orange), var(--swg-yellow));
+    box-shadow: var(--swg-shadow);
+    border-bottom: 3px solid var(--swg-blue);
+}
+
+.site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.5rem;
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.site-title {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--swg-dark);
+}
+
+.site-description {
+    margin: 0;
+    font-size: 0.875rem;
+    color: rgba(10, 10, 10, 0.75);
+}
+
+.primary-navigation {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.primary-navigation a {
+    color: var(--swg-dark);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    position: relative;
+}
+
+.primary-navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    width: 100%;
+    height: 3px;
+    background: var(--swg-blue);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--swg-transition);
+}
+
+.primary-navigation a:hover::after,
+.primary-navigation a:focus::after,
+.primary-navigation .current-menu-item > a::after {
+    transform: scaleX(1);
+}
+
+.menu-toggle {
+    display: none;
+    background: var(--swg-blue);
+    color: var(--swg-light);
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--swg-radius);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hero {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 6rem 1.5rem 5rem;
+    background: linear-gradient(135deg, rgba(255, 122, 0, 0.18), rgba(0, 85, 255, 0.12));
+}
+
+.hero__eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--swg-blue);
+    font-weight: 700;
+}
+
+.hero__title {
+    font-size: clamp(2.75rem, 5vw, 3.5rem);
+    margin: 0;
+    color: var(--swg-dark);
+    font-weight: 800;
+}
+
+.hero__subtitle {
+    font-size: 1.1rem;
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+.hero__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.65rem;
+    border-radius: var(--swg-radius);
+    background: linear-gradient(135deg, var(--swg-blue), var(--swg-red));
+    color: var(--swg-light);
+    font-weight: 700;
+    box-shadow: var(--swg-shadow);
+}
+
+.section {
+    padding: 4rem 1.5rem;
+    background: var(--swg-light);
+}
+
+.section--alt {
+    background: var(--swg-gray);
+}
+
+.section__heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section__heading h2 {
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    margin-bottom: 0.5rem;
+}
+
+.section__grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section__grid--three {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+    background: var(--swg-light);
+    padding: 1.75rem;
+    border-radius: var(--swg-radius);
+    box-shadow: var(--swg-shadow);
+    border: 1px solid rgba(0, 85, 255, 0.08);
+    transition: var(--swg-transition);
+}
+
+.card:hover,
+.card:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 55px rgba(255, 122, 0, 0.16);
+}
+
+.card__icon {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--swg-orange);
+}
+
+.site-footer {
+    background: var(--swg-dark);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 3rem 1.5rem;
+}
+
+.site-footer a {
+    color: var(--swg-yellow);
+}
+
+.footer__widgets {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-bottom: 2rem;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* Blog */
+.post-list {
+    display: grid;
+    gap: 2.5rem;
+    padding: 4rem 1.5rem;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.post-card {
+    background: var(--swg-light);
+    padding: 2rem;
+    border-radius: var(--swg-radius);
+    box-shadow: var(--swg-shadow);
+    border-left: 5px solid var(--swg-blue);
+}
+
+.post-card__meta {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(29, 29, 31, 0.65);
+}
+
+.post-card__title {
+    font-size: 1.65rem;
+    margin: 0.75rem 0;
+}
+
+/* Forms */
+form label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.35rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: var(--swg-radius);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: 1rem;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 3px solid rgba(0, 85, 255, 0.25);
+}
+
+button,
+input[type="submit"] {
+    background: linear-gradient(120deg, var(--swg-orange), var(--swg-red));
+    border: none;
+    color: var(--swg-light);
+    padding: 0.85rem 1.75rem;
+    border-radius: var(--swg-radius);
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--swg-transition);
+}
+
+button:hover,
+input[type="submit"]:hover {
+    filter: brightness(1.08);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+    .primary-navigation {
+        display: none;
+        position: absolute;
+        right: 1.5rem;
+        top: 72px;
+        flex-direction: column;
+        background: var(--swg-light);
+        padding: 1.5rem;
+        border-radius: var(--swg-radius);
+        box-shadow: var(--swg-shadow);
+        min-width: 220px;
+    }
+
+    .primary-navigation.is-open {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+    }
+
+    .site-header__inner {
+        position: relative;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-top: 5rem;
+    }
+
+    .site-container {
+        padding: 0 1rem;
+    }
+}
+
+/* Accessibility */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background: var(--swg-blue);
+    color: var(--swg-light);
+    z-index: 1000;
+}
