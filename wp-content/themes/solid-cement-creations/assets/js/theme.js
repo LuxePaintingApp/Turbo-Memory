@@ -120,4 +120,49 @@
             });
         }
     });
+
+    document.querySelectorAll('[data-accordion]').forEach((accordion) => {
+        accordion.querySelectorAll('.accordion-item').forEach((item) => {
+            const toggle = item.querySelector('.accordion-toggle');
+            const content = item.querySelector('.accordion-content');
+            if (!toggle || !content) {
+                return;
+            }
+
+            content.hidden = !item.classList.contains('is-active');
+            toggle.addEventListener('click', () => {
+                const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', String(!expanded));
+                content.hidden = expanded;
+            });
+        });
+    });
+
+    document.querySelectorAll('.tabs').forEach((tabList) => {
+        const container = tabList.closest('[data-tabs]') || tabList.parentElement;
+        const buttons = tabList.querySelectorAll('.tab-button');
+        const panels = container ? container.querySelectorAll('.tab-panel') : document.querySelectorAll(`#${tabList.id} ~ .tab-panel`);
+
+        panels.forEach((panel) => {
+            panel.hidden = !panel.classList.contains('is-active');
+        });
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-tab-target');
+
+                buttons.forEach((btn) => {
+                    const isActive = btn === button;
+                    btn.classList.toggle('is-active', isActive);
+                    btn.setAttribute('aria-selected', String(isActive));
+                });
+
+                panels.forEach((panel) => {
+                    const isActive = panel.id === targetId;
+                    panel.classList.toggle('is-active', isActive);
+                    panel.hidden = !isActive;
+                });
+            });
+        });
+    });
 })();

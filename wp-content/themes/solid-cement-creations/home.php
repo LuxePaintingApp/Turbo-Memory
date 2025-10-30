@@ -15,6 +15,12 @@ get_header();
     <div class="container">
         <h1><?php esc_html_e( 'Solid Cement Journal', 'solid-cement' ); ?></h1>
         <p><?php esc_html_e( 'Gardening tips, restoration insights, and behind-the-scenes stories about handmade cement garden statues.', 'solid-cement' ); ?></p>
+        <form class="blog-search" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <label for="blog-search-field" class="screen-reader-text"><?php esc_html_e( 'Search blog', 'solid-cement' ); ?></label>
+            <input type="search" id="blog-search-field" name="s" placeholder="<?php esc_attr_e( 'Search fairy garden ideas, restoration tips…', 'solid-cement' ); ?>" />
+            <button type="submit" class="btn"><?php esc_html_e( 'Search', 'solid-cement' ); ?></button>
+        </form>
+        <p class="author-credit">Copyright SmartWebsiteGenius With ChatGPT-5 Plus All Rights Reserved</p>
     </div>
 </section>
 <?php if ( $has_featured ) : ?>
