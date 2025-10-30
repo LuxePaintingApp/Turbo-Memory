@@ -10,6 +10,36 @@ define( 'SOLIDCEMENT_VERSION', '1.0.0' );
 require_once __DIR__ . '/inc/custom-post-types.php';
 require_once __DIR__ . '/inc/template-tags.php';
 
+if ( ! function_exists( 'solidcement_default_menu' ) ) {
+    /**
+     * Render fallback navigation when no menu is assigned.
+     */
+    function solidcement_default_menu() {
+        $pages = [
+            'home'            => __( 'Home', 'solid-cement' ),
+            'about-us'        => __( 'About Us', 'solid-cement' ),
+            'gnome-world'     => __( 'Gnome World', 'solid-cement' ),
+            'fairy-garden'    => __( 'Fairy Garden', 'solid-cement' ),
+            'garden-designs'  => __( 'Garden Designs', 'solid-cement' ),
+            'restorations'    => __( 'Restorations', 'solid-cement' ),
+            'blog'            => __( 'Blog', 'solid-cement' ),
+            'contact'         => __( 'Contact', 'solid-cement' ),
+        ];
+        echo '<ul class="menu-items">';
+        foreach ( $pages as $slug => $label ) {
+            $link = 'home' === $slug ? home_url( '/' ) : get_permalink( get_page_by_path( $slug ) );
+            if ( ! $link ) {
+                if ( 'blog' === $slug ) {
+                    $link = get_permalink( get_option( 'page_for_posts' ) );
+                }
+            }
+            $href = $link ? $link : home_url( '/' . $slug . '/' );
+            echo '<li class="menu-item"><a href="' . esc_url( $href ) . '">' . esc_html( $label ) . '</a></li>';
+        }
+        echo '</ul>';
+    }
+}
+
 if ( ! function_exists( 'solidcement_setup' ) ) {
     /**
      * Setup theme defaults.

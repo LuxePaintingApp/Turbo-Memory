@@ -1,0 +1,29 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Solid Cement Creations Theme Preview</title>
+  <desc id="desc">Illustrative preview of the Solid Cement Creations Elementor-ready WordPress theme featuring luxurious pink accents and garden imagery placeholders.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff8fd6" />
+      <stop offset="1" stop-color="#ffe1f3" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#f7f4ff" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)" />
+  <rect x="80" y="80" width="1040" height="740" rx="42" fill="url(#panel)" stroke="#ff3fa4" stroke-width="8" />
+  <rect x="150" y="140" width="900" height="180" rx="26" fill="#ff3fa4" />
+  <text x="180" y="220" font-family="'Breathing', 'Helvetica Neue', Arial, sans-serif" font-size="72" fill="#ffffff">Solid Cement Creations</text>
+  <text x="180" y="268" font-family="'Breathing', 'Helvetica Neue', Arial, sans-serif" font-size="34" fill="#ffe8f6">Handcrafted Luxury for Your Garden</text>
+  <g opacity="0.9">
+    <rect x="160" y="380" width="280" height="280" rx="32" fill="#f6efff" stroke="#ff3fa4" stroke-dasharray="14 14" />
+    <rect x="460" y="380" width="280" height="280" rx="32" fill="#f6efff" stroke="#ff3fa4" stroke-dasharray="14 14" />
+    <rect x="760" y="380" width="280" height="280" rx="32" fill="#f6efff" stroke="#ff3fa4" stroke-dasharray="14 14" />
+    <text x="300" y="530" text-anchor="middle" font-family="'Breathing', 'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#c01e7a">Gnome World</text>
+    <text x="600" y="530" text-anchor="middle" font-family="'Breathing', 'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#c01e7a">Fairy Garden</text>
+    <text x="900" y="530" text-anchor="middle" font-family="'Breathing', 'Helvetica Neue', Arial, sans-serif" font-size="28" fill="#c01e7a">Garden Designs</text>
+  </g>
+  <rect x="160" y="690" width="880" height="70" rx="20" fill="#ff3fa4" opacity="0.85" />
+  <text x="600" y="736" text-anchor="middle" font-family="'Breathing', 'Helvetica Neue', Arial, sans-serif" font-size="32" fill="#ffffff">Elementor-Compatible • Mobile-First • SEO-Optimised</text>
+</svg>
