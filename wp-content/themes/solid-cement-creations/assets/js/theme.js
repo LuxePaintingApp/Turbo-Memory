@@ -120,4 +120,82 @@
             });
         }
     });
+
+    document.querySelectorAll('[data-tabs]').forEach((tabsContainer) => {
+        const tabButtons = tabsContainer.querySelectorAll('[role="tab"]');
+        const tabPanels = tabsContainer.querySelectorAll('[data-tab-panel]');
+
+        const activateTab = (targetId) => {
+            tabButtons.forEach((button) => {
+                const isActive = button.getAttribute('data-tab-target') === targetId;
+                button.setAttribute('aria-selected', isActive ? 'true' : 'false');
+            });
+
+            tabPanels.forEach((panel) => {
+                const isActive = panel.id === targetId;
+                if (isActive) {
+                    panel.removeAttribute('hidden');
+                    panel.classList.add('is-active');
+                } else {
+                    panel.setAttribute('hidden', '');
+                    panel.classList.remove('is-active');
+                }
+            });
+        };
+
+        tabButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-tab-target');
+                activateTab(targetId);
+            });
+        });
+
+        const defaultButton = tabsContainer.querySelector('[role="tab"][aria-selected="true"]');
+        if (defaultButton) {
+            activateTab(defaultButton.getAttribute('data-tab-target'));
+        }
+    });
+
+    document.querySelectorAll('[data-toggle-panel]').forEach((panel) => {
+        const toggleInput = panel.querySelector('input[type="checkbox"]');
+        const residentialCopy = panel.querySelector('[data-toggle-panel-residential]');
+        const commercialCopy = panel.querySelector('[data-toggle-panel-commercial]');
+        const residentialText = panel.querySelector('[data-toggle-text-residential]');
+        const commercialText = panel.querySelector('[data-toggle-text-commercial]');
+
+        if (!toggleInput) {
+            return;
+        }
+
+        const updateState = () => {
+            const isCommercial = toggleInput.checked;
+            if (residentialCopy) {
+                residentialCopy.hidden = isCommercial;
+            }
+            if (commercialCopy) {
+                commercialCopy.hidden = !isCommercial;
+            }
+            if (residentialText) {
+                residentialText.hidden = isCommercial;
+            }
+            if (commercialText) {
+                commercialText.hidden = !isCommercial;
+            }
+        };
+
+        updateState();
+        toggleInput.addEventListener('change', updateState);
+    });
+
+    document.querySelectorAll('[data-range-output]').forEach((output) => {
+        const rangeInput = output.closest('.slider-control')?.querySelector('input[type="range"]');
+        if (!rangeInput) {
+            return;
+        }
+        const updateOutput = () => {
+            output.textContent = `Approx. ${rangeInput.value} cm`;
+        };
+        updateOutput();
+        rangeInput.addEventListener('input', updateOutput);
+    });
 })();

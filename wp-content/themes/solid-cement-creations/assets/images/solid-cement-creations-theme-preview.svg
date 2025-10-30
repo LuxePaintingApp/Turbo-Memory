@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Solid Cement Creations Theme Preview</title>
+  <desc id="desc">Placeholder preview artwork for the Solid Cement Creations Elementor theme.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3fa4" />
+      <stop offset="100%" stop-color="#f4cfe5" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" rx="48" />
+  <g fill="#ffffff" font-family="Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="800" y="360" font-size="86">Solid Cement Creations</text>
+    <text x="800" y="460" font-size="48" fill="#3a3a45">Luxurious Garden Theme</text>
+    <text x="800" y="560" font-size="32">Elementor Compatible · Mobile Ready · Bespoke Styling</text>
+  </g>
+</svg>

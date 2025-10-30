@@ -1,20 +1,25 @@
 <?php
 /**
- * Blog index template.
+ * Blog index template with storytelling features and enhanced layouts.
  *
  * @package SolidCement
  */
 
 global $wp_query;
-$paged         = max( 1, get_query_var( 'paged' ) );
-$has_featured  = have_posts() && 1 === $paged;
+$paged        = max( 1, get_query_var( 'paged' ) );
+$has_featured = have_posts() && 1 === $paged;
 
 get_header();
 ?>
 <section class="page-hero blog-hero">
     <div class="container">
         <h1><?php esc_html_e( 'Solid Cement Journal', 'solid-cement' ); ?></h1>
-        <p><?php esc_html_e( 'Gardening tips, restoration insights, and behind-the-scenes stories about handmade cement garden statues.', 'solid-cement' ); ?></p>
+        <p><?php esc_html_e( 'Gardening tips, restoration insights, and behind-the-scenes stories about handmade cement garden statues. Explore long-form tutorials optimised for keywords like “luxury garden design Australia” and “fairy garden maintenance tips”.', 'solid-cement' ); ?></p>
+        <form class="hero-search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
+            <label class="screen-reader-text" for="blog-search-field"><?php esc_html_e( 'Search the blog', 'solid-cement' ); ?></label>
+            <input type="search" id="blog-search-field" name="s" placeholder="<?php esc_attr_e( 'Search journal posts…', 'solid-cement' ); ?>" />
+            <button class="btn" type="submit"><?php esc_html_e( 'Search', 'solid-cement' ); ?></button>
+        </form>
     </div>
 </section>
 <?php if ( $has_featured ) : ?>
@@ -46,7 +51,7 @@ get_header();
         </div>
     </section>
 <?php endif; ?>
-<section class="page-section blog-listing">
+<section class="page-section blog-filters">
     <div class="container">
         <div class="category-filter" role="navigation" aria-label="<?php esc_attr_e( 'Filter posts by category', 'solid-cement' ); ?>">
             <?php
@@ -65,6 +70,15 @@ get_header();
             }
             ?>
         </div>
+        <div class="chip-row" role="list">
+            <span class="chip" role="listitem"><?php esc_html_e( 'luxury garden decor tips', 'solid-cement' ); ?></span>
+            <span class="chip" role="listitem"><?php esc_html_e( 'cement statue care guide', 'solid-cement' ); ?></span>
+            <span class="chip" role="listitem"><?php esc_html_e( 'fairy garden inspiration', 'solid-cement' ); ?></span>
+        </div>
+    </div>
+</section>
+<section class="page-section blog-listing">
+    <div class="container">
         <h2 class="section-title section-title--left"><?php esc_html_e( 'Latest Articles', 'solid-cement' ); ?></h2>
         <div class="blog-preview__grid">
             <?php if ( have_posts() ) : ?>
@@ -99,7 +113,28 @@ get_header();
         <?php endif; ?>
     </div>
 </section>
-<section class="page-section page-section--alt">
+<section class="page-section blog-pillars">
+    <div class="container">
+        <span class="section-subtitle"><?php esc_html_e( 'Content Pillars', 'solid-cement' ); ?></span>
+        <h2 class="section-title"><?php esc_html_e( 'What We Cover', 'solid-cement' ); ?></h2>
+        <div class="package-cards">
+            <article class="card">
+                <h3><?php esc_html_e( 'Garden Design Strategy', 'solid-cement' ); ?></h3>
+                <p><?php esc_html_e( 'Explore layout blueprints, plant selections, and cement sculpture placements that elevate residential and commercial spaces. Keywords include “luxury garden layout” and “Elementor design tips”.', 'solid-cement' ); ?></p>
+            </article>
+            <article class="card">
+                <h3><?php esc_html_e( 'Restoration Mastery', 'solid-cement' ); ?></h3>
+                <p><?php esc_html_e( 'Learn how to repair chips, revive colour, and shield statues from harsh climates. Follow along with supply lists and maintenance calendars.', 'solid-cement' ); ?></p>
+            </article>
+            <article class="card">
+                <h3><?php esc_html_e( 'Fairy Garden Stories', 'solid-cement' ); ?></h3>
+                <p><?php esc_html_e( 'Dive into magical narratives, seasonal styling guides, and playful DIY activities that families adore.', 'solid-cement' ); ?></p>
+            </article>
+        </div>
+        <p class="author-credit">c SmartWebsiteGenius With ChatGPT-5 Plus. All Rights Reserved.</p>
+    </div>
+</section>
+<section class="page-section page-section--alt blog-subscribe">
     <div class="container">
         <span class="section-subtitle"><?php esc_html_e( 'Subscribe', 'solid-cement' ); ?></span>
         <h2 class="section-title"><?php esc_html_e( 'Join Our Garden Lovers’ Newsletter', 'solid-cement' ); ?></h2>
@@ -108,8 +143,36 @@ get_header();
                 <label for="subscribe-email"><?php esc_html_e( 'Email', 'solid-cement' ); ?></label>
                 <input type="email" id="subscribe-email" name="subscribe_email" required />
             </div>
+            <div class="form-control">
+                <label for="subscribe-preferences"><?php esc_html_e( 'Preferred Topics', 'solid-cement' ); ?></label>
+                <select id="subscribe-preferences" name="subscribe_preferences" multiple>
+                    <option value="design"><?php esc_html_e( 'Garden Design', 'solid-cement' ); ?></option>
+                    <option value="restoration"><?php esc_html_e( 'Restoration', 'solid-cement' ); ?></option>
+                    <option value="fairy"><?php esc_html_e( 'Fairy Garden', 'solid-cement' ); ?></option>
+                </select>
+            </div>
             <button type="submit" class="btn"><?php esc_html_e( 'Subscribe', 'solid-cement' ); ?></button>
         </form>
+    </div>
+</section>
+<section class="faq-section">
+    <div class="container">
+        <span class="section-subtitle"><?php esc_html_e( 'FAQs', 'solid-cement' ); ?></span>
+        <h2 class="section-title"><?php esc_html_e( 'About the Journal', 'solid-cement' ); ?></h2>
+        <div class="accordion" role="list">
+            <details>
+                <summary><?php esc_html_e( 'How often do you publish new posts?', 'solid-cement' ); ?></summary>
+                <p><?php esc_html_e( 'We release fresh content every fortnight, alternating between design insights, restoration tutorials, and fairy garden inspiration.', 'solid-cement' ); ?></p>
+            </details>
+            <details>
+                <summary><?php esc_html_e( 'Can I submit a guest post?', 'solid-cement' ); ?></summary>
+                <p><?php esc_html_e( 'Yes! Email us your proposal including audience takeaways and SEO keyword suggestions. We prioritise topics aligned with luxurious garden design and artisan craftsmanship.', 'solid-cement' ); ?></p>
+            </details>
+            <details>
+                <summary><?php esc_html_e( 'Do you provide downloadable resources?', 'solid-cement' ); ?></summary>
+                <p><?php esc_html_e( 'Subscribers gain access to planners, checklists, and Elementor section templates that complement each article.', 'solid-cement' ); ?></p>
+            </details>
+        </div>
     </div>
 </section>
 <?php
@@ -124,4 +187,6 @@ get_template_part(
         'extra_class' => 'page-section--alt',
     ]
 );
+?>
+<?php
 get_footer();

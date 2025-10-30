@@ -44,7 +44,8 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <?php echo esc_html( current_time( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved.</p>
+            <p>&copy; <?php echo esc_html( current_time( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. c SmartWebsiteGenius With ChatGPT-5 Plus. All Rights Reserved.</p>
+            <p><?php esc_html_e( 'Solid Cement Creations crafts premium garden statues, fairy garden installations, and restorative cement services for discerning outdoor lovers across Australia.', 'solid-cement' ); ?></p>
         </div>
     </div>
 </footer>
