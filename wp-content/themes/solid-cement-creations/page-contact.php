@@ -12,6 +12,16 @@ get_header();
     <div class="container">
         <h1><?php esc_html_e( 'Contact Solid Cement Creations', 'solid-cement' ); ?></h1>
         <p><?php esc_html_e( 'Book a consultation, request a quote, or send us feedback about the finest cement garden statues Australia has to offer.', 'solid-cement' ); ?></p>
+        <div class="chip-row">
+            <span class="chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10H7l5.5-5.5L11 3l-8 9 8 9 1.5-1.5L7 12h14z"/></svg>
+                <?php esc_html_e( 'Fast responses', 'solid-cement' ); ?>
+            </span>
+            <span class="chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.52 1.04 1.52 1.04.89 1.52 2.34 1.08 2.91.83.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.28.1-2.68 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0112 6.8c.85.004 1.7.115 2.5.337 1.9-1.29 2.74-1.02 2.74-1.02.56 1.4.21 2.43.1 2.68.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .27.18.57.69.47A10 10 0 0012 2z"/></svg>
+                <?php esc_html_e( 'Social support', 'solid-cement' ); ?>
+            </span>
+        </div>
     </div>
 </section>
 

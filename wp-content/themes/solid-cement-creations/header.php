@@ -31,7 +31,7 @@
                 wp_nav_menu([
                     'theme_location' => 'primary',
                     'container'      => false,
-                    'fallback_cb'    => '__return_false',
+                    'fallback_cb'    => 'solidcement_default_menu',
                     'menu_class'     => 'menu-items',
                 ]);
                 ?>

@@ -5,7 +5,7 @@
  * @package SolidCement
  */
 ?>
-<form class="booking-form" method="post" action="#">
+<form class="booking-form" method="post" action="#" data-toast-target="booking-toast">
     <div class="form-control">
         <label for="booking-name">Name</label>
         <input type="text" id="booking-name" name="booking_name" required />
@@ -23,6 +23,10 @@
             <option value="garden-design">Garden Design</option>
             <option value="restoration">Restoration</option>
         </select>
+    </div>
+    <div class="form-control">
+        <label for="booking-details">Tell us about your space</label>
+        <textarea id="booking-details" name="booking_details" rows="4" placeholder="Share dimensions, sunlight, or the gnomes you adore."></textarea>
     </div>
     <button type="submit" class="btn">Request a Quote</button>
 </form>

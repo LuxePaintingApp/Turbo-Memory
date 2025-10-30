@@ -15,6 +15,34 @@ get_header();
     <div class="container">
         <h1><?php esc_html_e( 'Solid Cement Journal', 'solid-cement' ); ?></h1>
         <p><?php esc_html_e( 'Gardening tips, restoration insights, and behind-the-scenes stories about handmade cement garden statues.', 'solid-cement' ); ?></p>
+        <div class="chip-row">
+            <span class="chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2 6h6l-5 3.6L17 18l-5-3.4L7 18l2-6.4L4 8h6z"/></svg>
+                <?php esc_html_e( 'Garden design news', 'solid-cement' ); ?>
+            </span>
+            <span class="chip">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C7.03 3 3 7.03 3 12s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 2a7 7 0 110 14 7 7 0 010-14zm-.5 3v5.25l4.5 2.67-.75 1.23L10 12.75V8h1.5z"/></svg>
+                <?php esc_html_e( 'Restoration timelines', 'solid-cement' ); ?>
+            </span>
+        </div>
+    </div>
+</section>
+<section class="page-section">
+    <div class="container page-layout">
+        <aside class="page-sidebar">
+            <h3><?php esc_html_e( 'Why Read the Journal?', 'solid-cement' ); ?></h3>
+            <p><?php esc_html_e( 'We publish over 5,000 words of actionable gardening content — from cement statue maintenance to fairy garden styling — optimised for mobile readers and Elementor block layouts.', 'solid-cement' ); ?></p>
+            <ul class="list-check">
+                <li><?php esc_html_e( 'Garden gnome styling ideas with downloadable checklists', 'solid-cement' ); ?></li>
+                <li><?php esc_html_e( 'Step-by-step garden design tutorials covering lighting, seating, and planting', 'solid-cement' ); ?></li>
+                <li><?php esc_html_e( 'Restoration diaries showcasing before-and-after triumphs', 'solid-cement' ); ?></li>
+            </ul>
+        </aside>
+        <div>
+            <span class="section-subtitle"><?php esc_html_e( 'Editorial Mission', 'solid-cement' ); ?></span>
+            <h2 class="section-title"><?php esc_html_e( 'Luxury Garden Knowledge for Australian Homes', 'solid-cement' ); ?></h2>
+            <p><?php esc_html_e( 'Our editorial team interviews artisans, landscapers, and horticulturists to deliver SEO-rich stories that help your garden flourish. Each article is crafted for Elementor so you can rearrange layouts, embed galleries, or feature call-to-action panels with ease.', 'solid-cement' ); ?></p>
+        </div>
     </div>
 </section>
 <?php if ( $has_featured ) : ?>
