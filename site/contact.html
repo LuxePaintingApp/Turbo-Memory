@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Canvas Podcast · Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper navbar">
+        <a class="logo" href="index.html">Sonic Canvas</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn-primary" href="#connect">Let&apos;s collaborate</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <div class="wrapper hero-grid">
+          <div>
+            <span class="tag">Connect</span>
+            <h1>Tell us about the project you&apos;re dreaming up</h1>
+            <p>
+              Whether you&apos;re booking Sonic Canvas for a live session, commissioning sound
+              design, or pitching a collaboration, we&apos;d love to hear from you.
+            </p>
+          </div>
+          <div class="card" style="padding: 2.25rem;">
+            <h3 style="margin: 0 0 0.75rem;">Direct line</h3>
+            <p style="color: var(--text-secondary);">
+              Email <a href="mailto:hello@soniccanvas.fm">hello@soniccanvas.fm</a> or
+              schedule a call at <a href="tel:+13105550123">+1 (310) 555-0123</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="section alt">
+        <div class="wrapper">
+          <div class="section-title">
+            <h2>Share the details</h2>
+            <p>
+              Fill out the form and our team will get back to you within two business
+              days with next steps and availability.
+            </p>
+          </div>
+          <div class="contact-grid">
+            <form class="contact-form">
+              <label>
+                Your name
+                <input type="text" name="name" placeholder="How should we address you?" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Where can we reply?" required />
+              </label>
+              <label>
+                Collaboration focus
+                <select name="focus" required>
+                  <option value="">Select an option</option>
+                  <option value="guest">Be a guest</option>
+                  <option value="brand">Brand partnership</option>
+                  <option value="live">Live show / event</option>
+                  <option value="sound">Sound design project</option>
+                </select>
+              </label>
+              <label>
+                Message
+                <textarea name="message" placeholder="Tell us about your vision" required></textarea>
+              </label>
+              <button class="btn-primary" type="submit">Submit inquiry</button>
+            </form>
+            <div class="card" style="padding: 2rem;">
+              <h3 style="margin: 0 0 1rem;">Office hours</h3>
+              <p style="color: var(--text-secondary);">
+                We host monthly open studio sessions for our community. Drop in virtually
+                to workshop ideas, share progress, or get feedback on mixes.
+              </p>
+              <p style="color: var(--text-secondary);">
+                Wednesdays · 4 PM PST / 7 PM EST
+              </p>
+              <a class="btn-primary" href="resources.html">Reserve a seat</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrapper">
+          <div class="section-title">
+            <h2>FAQs</h2>
+            <p>
+              We&apos;ve answered the essentials. Need more information? Send us a note and
+              we&apos;ll tailor resources for you.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Where do you record?</h3>
+              <p>Remote and in-person from our Los Angeles and Berlin studios.</p>
+            </article>
+            <article class="card">
+              <h3>Do you mentor emerging creators?</h3>
+              <p>Yes—join our quarterly mentorship lab focused on narrative audio.</p>
+            </article>
+            <article class="card">
+              <h3>Can brands sponsor an episode?</h3>
+              <p>
+                Absolutely. We design bespoke integrations aligned with your brand&apos;s tone
+                and audience.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer-grid">
+          <div>
+            <div class="logo">Sonic Canvas</div>
+            <p style="color: var(--text-secondary); max-width: 320px;">
+              A podcast crafted for creators and musicians who believe in fearless
+              experimentation and community-first storytelling.
+            </p>
+          </div>
+          <div>
+            <div class="footer-title">Explore</div>
+            <ul class="footer-links">
+              <li><a href="episodes.html">Latest Episodes</a></li>
+              <li><a href="about.html">Meet the Hosts</a></li>
+              <li><a href="resources.html">Creator Toolkit</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Connect</div>
+            <ul class="footer-links">
+              <li><a href="contact.html">Book us to speak</a></li>
+              <li><a href="mailto:hello@soniccanvas.fm">hello@soniccanvas.fm</a></li>
+              <li><a href="#">Instagram · Twitter · YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year">2025</span> Sonic Canvas Collective. All rights reserved.</span>
+          <span>Made with purpose for visionaries.</span>
+        </div>
+      </div>
+      <script>
+        const yearEl = document.getElementById('year');
+        if (yearEl) {
+          yearEl.textContent = new Date().getFullYear();
+        }
+      </script>
+    </footer>
+  </body>
+</html>

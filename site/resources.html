@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Canvas Podcast · Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper navbar">
+        <a class="logo" href="index.html">Sonic Canvas</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn-primary" href="#toolkit">Download toolkit</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <div class="wrapper hero-grid">
+          <div>
+            <span class="tag">Creator Toolkit</span>
+            <h1>Resources designed to sustain your creative momentum</h1>
+            <p>
+              From checklists and prompts to sound packs and workflow templates, everything
+              here is built to help you stay in flow and share your craft with confidence.
+            </p>
+          </div>
+          <div class="card" style="padding: 2.5rem;">
+            <h3 style="margin: 0 0 0.75rem;">What&apos;s inside</h3>
+            <p style="color: var(--text-secondary);">
+              Launch guides, sponsorship templates, audience ritual boards, sonic
+              identity worksheets, and more.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="toolkit" class="section alt">
+        <div class="wrapper">
+          <div class="section-title">
+            <h2>Featured downloads</h2>
+            <p>
+              Save time and elevate the experience for your listeners, collaborators, and
+              clients with these polished assets.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Showrunner Blueprint</h3>
+              <p>
+                A 28-page Notion template covering content pillars, guest pipelines, and
+                sponsor outreach.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Sound Identity Starter Pack</h3>
+              <p>
+                30 royalty-free stems, bumpers, and transitions curated with our resident
+                composers.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Launch Week Checklist</h3>
+              <p>
+                Detailed timeline with copy prompts, automation workflows, and analytics
+                dashboards.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Creator Rate Guide</h3>
+              <p>
+                Updated pricing benchmarks for podcasts, workshops, speaking, and branded
+                collaborations.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrapper">
+          <div class="section-title">
+            <h2>Workshops &amp; labs</h2>
+            <p>
+              Immersive learning experiences to help you refine your voice, expand your
+              business, and build community.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Story-driven Podcasting</h3>
+              <p>6-week live cohort blending narrative design with production labs.</p>
+            </article>
+            <article class="card">
+              <h3>Live Show Architect</h3>
+              <p>Design an unforgettable multisensory performance from concept to stage.</p>
+            </article>
+            <article class="card">
+              <h3>Sustainable Creator Systems</h3>
+              <p>Build your second brain for content planning, partnerships, and growth.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="wrapper newsletter">
+          <div>
+            <h3>Get the Resource Digest</h3>
+            <p>
+              Monthly email sharing new templates, tool experiments, and future-focused
+              audio tech discoveries.
+            </p>
+          </div>
+          <form>
+            <input type="email" placeholder="you@email.com" required />
+            <button class="btn-primary" type="submit">Send me updates</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer-grid">
+          <div>
+            <div class="logo">Sonic Canvas</div>
+            <p style="color: var(--text-secondary); max-width: 320px;">
+              A podcast crafted for creators and musicians who believe in fearless
+              experimentation and community-first storytelling.
+            </p>
+          </div>
+          <div>
+            <div class="footer-title">Explore</div>
+            <ul class="footer-links">
+              <li><a href="episodes.html">Latest Episodes</a></li>
+              <li><a href="about.html">Meet the Hosts</a></li>
+              <li><a href="resources.html">Creator Toolkit</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Connect</div>
+            <ul class="footer-links">
+              <li><a href="contact.html">Book us to speak</a></li>
+              <li><a href="mailto:hello@soniccanvas.fm">hello@soniccanvas.fm</a></li>
+              <li><a href="#">Instagram · Twitter · YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year">2025</span> Sonic Canvas Collective. All rights reserved.</span>
+          <span>Made with purpose for visionaries.</span>
+        </div>
+      </div>
+      <script>
+        const yearEl = document.getElementById('year');
+        if (yearEl) {
+          yearEl.textContent = new Date().getFullYear();
+        }
+      </script>
+    </footer>
+  </body>
+</html>
