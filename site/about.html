@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonic Canvas Podcast · About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper navbar">
+        <a class="logo" href="index.html">Sonic Canvas</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn-primary" href="contact.html">Book a session</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <div class="wrapper hero-grid">
+          <div>
+            <span class="tag">Our Story</span>
+            <h1>Crafting soundscapes that inspire brave creation</h1>
+            <p>
+              Sonic Canvas began as a late-night experiment between two friends in a
+              warehouse studio. Today it&apos;s a global hub for artists and makers hungry
+              for authentic conversations and actionable frameworks.
+            </p>
+          </div>
+          <div class="card" style="padding: 2.25rem;">
+            <h3 style="margin: 0 0 0.75rem;">Manifesto</h3>
+            <p style="color: var(--text-secondary);">
+              Create with conviction. Share the process. Protect your energy. Build
+              together. Celebrate every stage.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="wrapper">
+          <div class="section-title">
+            <h2>Meet the hosts</h2>
+            <p>
+              Two creatives with radically different backgrounds united by a shared love
+              for storytelling through sound.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Rhea Solis · Producer &amp; Strategist</h3>
+              <p>
+                Rhea blends brand strategy with sonic design. She has guided Grammy
+                winners, indie filmmakers, and mission-led founders to their signature
+                sound.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Atlas Monroe · Composer &amp; Technologist</h3>
+              <p>
+                Atlas builds tools that help artists experiment faster—from custom synth
+                plugins to adaptive performance rigs for immersive shows.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrapper">
+          <div class="section-title">
+            <h2>The journey so far</h2>
+            <p>
+              Our timeline charts the experiments, collaborations, and community rituals
+              that shaped Sonic Canvas into a movement.
+            </p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>2019 · Warehouse beginnings</h3>
+              <p>Started recording around a single mic after midnight sessions.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>2020 · Community launch</h3>
+              <p>Released our first workshop series and built an intimate Discord hub.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>2022 · Global collaborations</h3>
+              <p>Partnered with artists across four continents for live scoring events.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>2024 · Sonic Canvas Labs</h3>
+              <p>Opened a residency space for interdisciplinary creators and educators.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="wrapper newsletter">
+          <div>
+            <h3>Collaborate with us</h3>
+            <p>
+              We welcome new voices—producers, storytellers, educators, community leaders.
+              Pitch your idea and let&apos;s build something unforgettable.
+            </p>
+          </div>
+          <form>
+            <input type="email" placeholder="Your email" required />
+            <button class="btn-primary" type="submit">Start a conversation</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer-grid">
+          <div>
+            <div class="logo">Sonic Canvas</div>
+            <p style="color: var(--text-secondary); max-width: 320px;">
+              A podcast crafted for creators and musicians who believe in fearless
+              experimentation and community-first storytelling.
+            </p>
+          </div>
+          <div>
+            <div class="footer-title">Explore</div>
+            <ul class="footer-links">
+              <li><a href="episodes.html">Latest Episodes</a></li>
+              <li><a href="about.html">Meet the Hosts</a></li>
+              <li><a href="resources.html">Creator Toolkit</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-title">Connect</div>
+            <ul class="footer-links">
+              <li><a href="contact.html">Book us to speak</a></li>
+              <li><a href="mailto:hello@soniccanvas.fm">hello@soniccanvas.fm</a></li>
+              <li><a href="#">Instagram · Twitter · YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year">2025</span> Sonic Canvas Collective. All rights reserved.</span>
+          <span>Made with purpose for visionaries.</span>
+        </div>
+      </div>
+      <script>
+        const yearEl = document.getElementById('year');
+        if (yearEl) {
+          yearEl.textContent = new Date().getFullYear();
+        }
+      </script>
+    </footer>
+  </body>
+</html>
