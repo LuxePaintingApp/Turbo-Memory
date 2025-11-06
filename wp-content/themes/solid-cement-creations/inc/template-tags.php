@@ -5,6 +5,32 @@
  * @package SolidCement
  */
 
+if ( ! function_exists( 'solidcement_can_use_elementor' ) ) {
+    /**
+     * Determine whether the current post should be rendered by Elementor.
+     *
+     * Keeping this logic in a helper avoids sprinkling Elementor specific
+     * checks throughout every template and gracefully falls back to the
+     * handcrafted layouts when the plugin is not available.
+     *
+     * @param int|null $post_id Optional post ID to test.
+     * @return bool
+     */
+    function solidcement_can_use_elementor( $post_id = null ) {
+        if ( ! did_action( 'elementor/loaded' ) || ! class_exists( '\\Elementor\\Plugin' ) ) {
+            return false;
+        }
+
+        $post_id = $post_id ? $post_id : get_the_ID();
+
+        if ( ! $post_id ) {
+            return false;
+        }
+
+        return (bool) \Elementor\Plugin::$instance->db->is_built_with_elementor( $post_id );
+    }
+}
+
 if ( ! function_exists( 'solidcement_render_signature_creations' ) ) {
     /**
      * Output highlight cards for the front page.

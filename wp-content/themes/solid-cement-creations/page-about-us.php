@@ -7,6 +7,16 @@
 
 global $post;
 get_header();
+
+if ( solidcement_can_use_elementor() ) {
+    while ( have_posts() ) {
+        the_post();
+        the_content();
+    }
+    get_footer();
+    return;
+}
+
 $maker_name  = get_post_meta( get_the_ID(), 'solidcement_maker_name', true );
 $maker_title = get_post_meta( get_the_ID(), 'solidcement_maker_title', true );
 $maker_bio   = get_post_meta( get_the_ID(), 'solidcement_maker_bio', true );
