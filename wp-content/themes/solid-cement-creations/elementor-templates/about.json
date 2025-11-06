@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "About Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "about-section",
+      "elType": "section",
+      "settings": {},
+      "elements": [
+        {
+          "id": "about-column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "about-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Carving Luxury into Every Garden",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "about-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Solid Cement Creations elevates outdoor art through bespoke craftsmanship.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

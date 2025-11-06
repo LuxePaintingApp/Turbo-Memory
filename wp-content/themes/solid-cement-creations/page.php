@@ -6,35 +6,26 @@
  */
 
 global $post;
+
 get_header();
 ?>
-<section class="page-hero">
+<section class="page-section page-section--alt">
     <div class="container">
-        <h1><?php the_title(); ?></h1>
+        <div class="section-heading">
+            <span class="kicker"><?php esc_html_e( 'Solid Cement Creations', 'solid-cement' ); ?></span>
+            <h1><?php the_title(); ?></h1>
+        </div>
     </div>
 </section>
-<section class="page-section">
-    <div class="container">
-        <?php
-        while ( have_posts() ) :
-            the_post();
-            the_content();
-        endwhile;
-        ?>
-    </div>
-</section>
-<?php
-get_template_part(
-    'template-parts/components/quote-section',
-    null,
-    [
-        'section_id'  => 'quote',
-        'subtitle'    => __( 'Ready for Luxury Cement Creations?', 'solid-cement' ),
-        'title'       => __( 'Request Your Personalised Quote', 'solid-cement' ),
-        'copy'        => __( 'Let us know what you are dreaming up and we will reply with tailored ideas and pricing.', 'solid-cement' ),
-        'extra_class' => 'page-section--alt',
-    ]
-);
-?>
+
+<?php if ( have_posts() ) : ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+        <section class="page-section page-section--content">
+            <div class="container">
+                <?php the_content(); ?>
+            </div>
+        </section>
+    <?php endwhile; ?>
+<?php endif; ?>
 <?php
 get_footer();

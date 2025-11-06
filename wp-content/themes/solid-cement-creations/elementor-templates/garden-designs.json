@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "Garden Designs Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "garden-section",
+      "elType": "section",
+      "settings": {},
+      "elements": [
+        {
+          "id": "garden-column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "garden-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Landscapes Reimagined",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "garden-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Outline the consult, design, create, and install steps with Icon Box widgets.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

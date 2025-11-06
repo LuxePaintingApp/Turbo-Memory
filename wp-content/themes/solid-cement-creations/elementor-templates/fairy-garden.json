@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "Fairy Garden Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "fairy-section",
+      "elType": "section",
+      "settings": {},
+      "elements": [
+        {
+          "id": "fairy-column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "fairy-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Magic in Every Corner",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "fairy-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Use image carousels and call-to-action buttons to invite bookings.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

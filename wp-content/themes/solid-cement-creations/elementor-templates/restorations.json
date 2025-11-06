@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "Restorations Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "restore-section",
+      "elType": "section",
+      "settings": {},
+      "elements": [
+        {
+          "id": "restore-column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "restore-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Renew and Restore",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "restore-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Pair before/after sliders with FAQ toggles to build trust.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

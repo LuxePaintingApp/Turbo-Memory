@@ -1,0 +1,96 @@
+{
+  "version": "0.4",
+  "title": "Home Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "section-hero",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ff2f92"
+      },
+      "elements": [
+        {
+          "id": "column-hero",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "hero-badge",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span class=\"hero-badge\">Google Ads • PPC • Funnels • ROI</span>"
+              }
+            },
+            {
+              "id": "hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Handcrafted Luxury for Your Garden",
+                "header_size": "h1",
+                "typography_typography": "custom",
+                "typography_font_size": {"size": 48}
+              }
+            },
+            {
+              "id": "hero-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Introduce visitors to premium gnomes, fairy gardens, and bespoke outdoor designs.</p>"
+              }
+            },
+            {
+              "id": "hero-buttons",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"hero-cta\"><a class=\"btn\" href=\"#collections\">Explore Collections</a><a class=\"btn btn--ghost\" href=\"#quote\">Book a Consultation</a></div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-gallery",
+      "elType": "section",
+      "settings": {
+        "structure": "30"
+      },
+      "elements": [
+        {
+          "id": "column-gallery",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gallery-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Signature Creations",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "gallery-html",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div class=\"gallery-grid\"><figure><img src=\"https://via.placeholder.com/360x240\" alt=\"Gnome World\" /><figcaption>Gnome World</figcaption></figure><figure><img src=\"https://via.placeholder.com/360x240\" alt=\"Fairy Garden\" /><figcaption>Fairy Garden</figcaption></figure><figure><img src=\"https://via.placeholder.com/360x240\" alt=\"Garden Designs\" /><figcaption>Garden Designs</figcaption></figure></div>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "Blog Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "blog-section",
+      "elType": "section",
+      "settings": {},
+      "elements": [
+        {
+          "id": "blog-column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "blog-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Stories from the Studio",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "blog-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Highlight featured posts and category filters for Inspiration, Restoration, and Design Tips.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
