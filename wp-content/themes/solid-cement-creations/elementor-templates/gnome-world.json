@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "Gnome World Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "gnome-hero",
+      "elType": "section",
+      "settings": {},
+      "elements": [
+        {
+          "id": "gnome-column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "gnome-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Whimsy and Craft",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "gnome-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Showcase bespoke gnome collections with hoverable cards and call-to-action buttons.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

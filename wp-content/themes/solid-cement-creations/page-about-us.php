@@ -1,135 +1,145 @@
 <?php
 /**
- * About page template.
+ * About Us page template.
  *
  * @package SolidCement
  */
 
 global $post;
+
 get_header();
-$maker_name  = get_post_meta( get_the_ID(), 'solidcement_maker_name', true );
-$maker_title = get_post_meta( get_the_ID(), 'solidcement_maker_title', true );
-$maker_bio   = get_post_meta( get_the_ID(), 'solidcement_maker_bio', true );
-$maker_photo = get_post_meta( get_the_ID(), 'solidcement_maker_photo', true );
-$mission     = get_post_meta( get_the_ID(), 'solidcement_mission', true );
-$values      = get_post_meta( get_the_ID(), 'solidcement_values', true );
-$process_ids = array_filter( array_map( 'trim', explode( ',', (string) get_post_meta( get_the_ID(), 'solidcement_process_gallery', true ) ) ) );
 ?>
-<section class="page-hero">
+<section class="page-section page-section--alt">
     <div class="container">
-        <h1><?php the_title(); ?></h1>
-        <p><?php echo esc_html( get_post_meta( get_the_ID(), 'solidcement_about_tagline', true ) ); ?></p>
+        <div class="section-heading">
+            <span class="kicker"><?php esc_html_e( 'Our Story in Stone', 'solid-cement' ); ?></span>
+            <h1><?php esc_html_e( 'Carving Luxury into Every Garden', 'solid-cement' ); ?></h1>
+            <p><?php esc_html_e( 'From a small Perth studio to Australia’s most coveted garden artisans, we shape premium cement into whimsical treasures.', 'solid-cement' ); ?></p>
+        </div>
     </div>
 </section>
 
 <section class="page-section">
-    <div class="container">
-        <span class="section-subtitle"><?php esc_html_e( 'Brand Story', 'solid-cement' ); ?></span>
-        <h2 class="section-title"><?php esc_html_e( 'From humble beginnings to luxury garden artistry', 'solid-cement' ); ?></h2>
-        <p class="section-lede"><?php esc_html_e( 'Solid Cement Creations grew from a single kiln into a studio renowned for cement outdoor sculptures that celebrate Australian gardens.', 'solid-cement' ); ?></p>
-        <div class="page-content">
-            <?php
-            while ( have_posts() ) :
-                the_post();
-                the_content();
-            endwhile;
-            ?>
+    <div class="container split-grid">
+        <div>
+            <div class="card-style-b">
+                <h2><?php esc_html_e( 'Brand Story', 'solid-cement' ); ?></h2>
+                <p><?php esc_html_e( 'Solid Cement Creations began with a promise: elevate backyard moments into gallery-worthy experiences. Each gnome, fairy arch, and bird bath is hand-poured, sculpted, and finished to withstand the Australian climate while radiating charm.', 'solid-cement' ); ?></p>
+            </div>
+        </div>
+        <div>
+            <figure class="hero-media">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-gnome-world.svg' ); ?>" alt="<?php esc_attr_e( 'Founders shaping garden sculptures.', 'solid-cement' ); ?>" />
+                <figcaption><?php esc_html_e( 'Studio Origins — 2008', 'solid-cement' ); ?></figcaption>
+            </figure>
         </div>
     </div>
 </section>
 
 <section class="page-section page-section--alt">
-    <div class="container media-grid">
+    <div class="container split-grid">
         <div>
-            <span class="section-subtitle"><?php esc_html_e( 'Meet the Maker', 'solid-cement' ); ?></span>
-            <h2 class="section-title"><?php echo esc_html( $maker_name ? $maker_name : __( 'Your Artisan', 'solid-cement' ) ); ?></h2>
-            <?php if ( $maker_title ) : ?>
-                <p><strong><?php echo esc_html( $maker_title ); ?></strong></p>
-            <?php endif; ?>
-            <?php if ( $maker_bio ) : ?>
-                <p><?php echo esc_html( $maker_bio ); ?></p>
-            <?php else : ?>
-                <p><?php esc_html_e( 'Share your passion for cement artistry, the care behind each mould, and what makes your cement outdoor sculptures unique.', 'solid-cement' ); ?></p>
-            <?php endif; ?>
+            <figure class="hero-media">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-fairy-garden.svg' ); ?>" alt="<?php esc_attr_e( 'Lead artisan sculpting a fairy statue.', 'solid-cement' ); ?>" />
+                <figcaption><?php esc_html_e( 'Lead Artisan — Sofia Greene', 'solid-cement' ); ?></figcaption>
+            </figure>
         </div>
-        <div>
-            <?php
-            if ( $maker_photo ) {
-                echo wp_get_attachment_image( $maker_photo, 'large', false, [ 'class' => 'maker-photo' ] );
-            } elseif ( has_post_thumbnail() ) {
-                the_post_thumbnail( 'large', [ 'class' => 'maker-photo' ] );
-            } else {
-                echo '<div class="map-placeholder">' . esc_html__( 'Upload a maker portrait via custom field.', 'solid-cement' ) . '</div>';
-            }
-            ?>
+        <div class="card-style-b">
+            <h2><?php esc_html_e( 'Meet the Maker', 'solid-cement' ); ?></h2>
+            <p><?php esc_html_e( 'Sofia Greene blends fine art training with industrial precision. Her process focuses on storytelling through texture, light, and form, ensuring every piece feels at home in luxury landscapes.', 'solid-cement' ); ?></p>
+            <div class="tag-pills">
+                <span class="tag-pill"><?php esc_html_e( 'Sculptor', 'solid-cement' ); ?></span>
+                <span class="tag-pill"><?php esc_html_e( 'Designer', 'solid-cement' ); ?></span>
+                <span class="tag-pill"><?php esc_html_e( 'Strategist', 'solid-cement' ); ?></span>
+            </div>
         </div>
     </div>
 </section>
 
 <section class="page-section">
     <div class="container">
-        <span class="section-subtitle"><?php esc_html_e( 'Behind the Scenes', 'solid-cement' ); ?></span>
-        <h2 class="section-title"><?php esc_html_e( 'Craftsmanship in Motion', 'solid-cement' ); ?></h2>
-        <div class="media-grid">
-            <?php
-            if ( $process_ids ) {
-                foreach ( $process_ids as $attachment_id ) {
-                    echo '<figure class="feature-card">';
-                    echo wp_get_attachment_image( $attachment_id, 'large' );
-                    echo '</figure>';
-                }
-            } else {
-                echo '<p>' . esc_html__( 'Add attachment IDs to the "solidcement_process_gallery" custom field to show your studio process.', 'solid-cement' ) . '</p>';
-            }
-            ?>
+        <div class="section-heading">
+            <span class="kicker"><?php esc_html_e( 'Behind the Scenes', 'solid-cement' ); ?></span>
+            <h2><?php esc_html_e( 'Where Craftsmanship Meets Imagination', 'solid-cement' ); ?></h2>
+        </div>
+        <div class="gallery-grid">
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-garden-designs.svg' ); ?>" alt="<?php esc_attr_e( 'Pouring cement into moulds.', 'solid-cement' ); ?>" />
+            </figure>
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-gnome-world.svg' ); ?>" alt="<?php esc_attr_e( 'Polishing a gnome.', 'solid-cement' ); ?>" />
+            </figure>
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-fairy-garden.svg' ); ?>" alt="<?php esc_attr_e( 'Curating a fairy garden set.', 'solid-cement' ); ?>" />
+            </figure>
         </div>
     </div>
 </section>
 
 <section class="page-section page-section--alt">
-    <div class="container media-grid">
-        <div>
-            <span class="section-subtitle"><?php esc_html_e( 'Mission & Values', 'solid-cement' ); ?></span>
-            <h2 class="section-title"><?php esc_html_e( 'Quality, Care, Creativity', 'solid-cement' ); ?></h2>
+    <div class="container">
+        <div class="section-heading">
+            <span class="kicker"><?php esc_html_e( 'Mission & Values', 'solid-cement' ); ?></span>
+            <h2><?php esc_html_e( 'We Honour Craft, Sustainability, and Joy', 'solid-cement' ); ?></h2>
         </div>
-        <div>
-            <?php if ( $mission ) : ?>
-                <p><?php echo esc_html( $mission ); ?></p>
-            <?php else : ?>
-                <p><?php esc_html_e( 'Describe your commitment to bespoke craftsmanship, longevity, and client delight.', 'solid-cement' ); ?></p>
-            <?php endif; ?>
-            <?php if ( $values ) : ?>
-                <ul>
-                    <?php foreach ( preg_split( '/\r\n|\r|\n/', $values ) as $value ) : ?>
-                        <?php if ( trim( $value ) ) : ?>
-                            <li><?php echo esc_html( $value ); ?></li>
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </ul>
-            <?php endif; ?>
+        <div class="process-steps">
+            <article class="process-step">
+                <div class="process-step__index">1</div>
+                <div>
+                    <h3><?php esc_html_e( 'Artisan Excellence', 'solid-cement' ); ?></h3>
+                    <p><?php esc_html_e( 'Every piece passes through eight quality touchpoints to guarantee perfect finishes.', 'solid-cement' ); ?></p>
+                </div>
+            </article>
+            <article class="process-step">
+                <div class="process-step__index">2</div>
+                <div>
+                    <h3><?php esc_html_e( 'Sustainable Choices', 'solid-cement' ); ?></h3>
+                    <p><?php esc_html_e( 'We use recycled aggregates and water-conscious finishing for lasting impact.', 'solid-cement' ); ?></p>
+                </div>
+            </article>
+            <article class="process-step">
+                <div class="process-step__index">3</div>
+                <div>
+                    <h3><?php esc_html_e( 'Community Magic', 'solid-cement' ); ?></h3>
+                    <p><?php esc_html_e( 'Collaborations with local artists and gardeners keep every installation uniquely alive.', 'solid-cement' ); ?></p>
+                </div>
+            </article>
         </div>
     </div>
 </section>
 
 <section class="page-section">
     <div class="container">
-        <span class="section-subtitle"><?php esc_html_e( 'Customer Highlights', 'solid-cement' ); ?></span>
-        <h2 class="section-title"><?php esc_html_e( 'Favourite Projects', 'solid-cement' ); ?></h2>
-        <?php solidcement_render_gallery( 'highlight' ); ?>
+        <div class="section-heading">
+            <span class="kicker"><?php esc_html_e( 'Customer Highlights', 'solid-cement' ); ?></span>
+            <h2><?php esc_html_e( 'Celebrating Inspired Landscapes', 'solid-cement' ); ?></h2>
+        </div>
+        <div class="gallery-grid">
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-garden-designs.svg' ); ?>" alt="<?php esc_attr_e( 'Luxury garden installation with custom sculptures.', 'solid-cement' ); ?>" />
+            </figure>
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-fairy-garden.svg' ); ?>" alt="<?php esc_attr_e( 'Fairy garden water feature.', 'solid-cement' ); ?>" />
+            </figure>
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-gnome-world.svg' ); ?>" alt="<?php esc_attr_e( 'Gnome village display.', 'solid-cement' ); ?>" />
+            </figure>
+        </div>
     </div>
 </section>
 <?php
-get_template_part(
-    'template-parts/components/quote-section',
-    null,
-    [
-        'section_id'  => 'quote',
-        'subtitle'    => __( 'Book a Consultation', 'solid-cement' ),
-        'title'       => __( 'Bring Your Dream Garden to Life', 'solid-cement' ),
-        'copy'        => __( 'Share your vision and we will curate a tailored plan for your outdoor sanctuary.', 'solid-cement' ),
-        'extra_class' => 'page-section--alt',
-    ]
-);
-?>
-<?php
+if ( have_posts() ) :
+    while ( have_posts() ) :
+        the_post();
+        if ( trim( get_the_content() ) ) :
+            ?>
+            <section class="page-section page-section--content">
+                <div class="container">
+                    <?php the_content(); ?>
+                </div>
+            </section>
+            <?php
+        endif;
+    endwhile;
+endif;
 get_footer();

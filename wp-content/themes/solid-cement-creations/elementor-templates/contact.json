@@ -1,0 +1,38 @@
+{
+  "version": "0.4",
+  "title": "Contact Layout",
+  "type": "page",
+  "content": [
+    {
+      "id": "contact-section",
+      "elType": "section",
+      "settings": {},
+      "elements": [
+        {
+          "id": "contact-column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "contact-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Let’s Create Together",
+                "header_size": "h2"
+              }
+            },
+            {
+              "id": "contact-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Use form and map widgets to make enquiries effortless.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -6,89 +6,106 @@
  */
 
 global $post;
+
 get_header();
 ?>
-<section class="page-hero">
+<section class="page-section page-section--alt">
     <div class="container">
-        <h1><?php esc_html_e( 'Fairy Garden Experiences', 'solid-cement' ); ?></h1>
-        <p><?php esc_html_e( 'Whimsical landscapes designed with layered textures, lighting, and weatherproof cement garden decor.', 'solid-cement' ); ?></p>
+        <div class="section-heading">
+            <span class="kicker"><?php esc_html_e( 'Fairy Garden', 'solid-cement' ); ?></span>
+            <h1><?php esc_html_e( 'Magic in Every Corner', 'solid-cement' ); ?></h1>
+            <p><?php esc_html_e( 'Immerse your guests in a storybook setting with bespoke pathways, sculptural lighting, and miniature architecture.', 'solid-cement' ); ?></p>
+        </div>
+        <figure class="hero-media">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-fairy-garden.svg' ); ?>" alt="<?php esc_attr_e( 'Enchanting fairy garden scene.', 'solid-cement' ); ?>" />
+            <figcaption><?php esc_html_e( 'Perth Botanic Installation', 'solid-cement' ); ?></figcaption>
+        </figure>
     </div>
 </section>
 
 <section class="page-section">
     <div class="container">
-        <span class="section-subtitle"><?php esc_html_e( 'Gallery Carousel', 'solid-cement' ); ?></span>
-        <h2 class="section-title"><?php esc_html_e( 'Before & After Moments', 'solid-cement' ); ?></h2>
-        <?php solidcement_render_gallery( 'fairy-garden' ); ?>
+        <div class="section-heading">
+            <span class="kicker"><?php esc_html_e( 'Gallery Carousel', 'solid-cement' ); ?></span>
+            <h2><?php esc_html_e( 'Scenes That Spark Wonder', 'solid-cement' ); ?></h2>
+        </div>
+        <div class="gallery-grid">
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-fairy-garden.svg' ); ?>" alt="<?php esc_attr_e( 'Fairy lights over moss pathways.', 'solid-cement' ); ?>" />
+            </figure>
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-garden-designs.svg' ); ?>" alt="<?php esc_attr_e( 'Miniature castle within a garden.', 'solid-cement' ); ?>" />
+            </figure>
+            <figure>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/placeholder-gnome-world.svg' ); ?>" alt="<?php esc_attr_e( 'Water feature with fairy statues.', 'solid-cement' ); ?>" />
+            </figure>
+        </div>
     </div>
 </section>
 
 <section class="page-section page-section--alt">
     <div class="container">
-        <span class="section-subtitle"><?php esc_html_e( 'Design Inspiration', 'solid-cement' ); ?></span>
-        <h2 class="section-title"><?php esc_html_e( 'Ideas for Outdoor Storytelling', 'solid-cement' ); ?></h2>
-        <div class="blog-preview__grid">
+        <div class="section-heading">
+            <span class="kicker"><?php esc_html_e( 'Design Inspiration', 'solid-cement' ); ?></span>
+            <h2><?php esc_html_e( 'Ideas to Enchant Every Visit', 'solid-cement' ); ?></h2>
+        </div>
+        <div class="posts-grid">
             <?php
-            $inspiration = new WP_Query(
+            $fairy_posts = new WP_Query(
                 [
                     'post_type'      => 'post',
                     'posts_per_page' => 3,
-                    'tax_query'      => [
-                        [
-                            'taxonomy' => 'category',
-                            'field'    => 'slug',
-                            'terms'    => [ 'inspiration' ],
-                        ],
-                    ],
+                    'category_name'  => 'inspiration,fairy-garden',
                 ]
             );
-            if ( $inspiration->have_posts() ) :
-                while ( $inspiration->have_posts() ) : $inspiration->the_post();
+            if ( $fairy_posts->have_posts() ) :
+                while ( $fairy_posts->have_posts() ) :
+                    $fairy_posts->the_post();
                     ?>
-                    <article class="blog-card">
+                    <article <?php post_class(); ?>>
                         <?php if ( has_post_thumbnail() ) : ?>
-                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail( 'large' ); ?>
+                            </a>
                         <?php endif; ?>
-                        <div class="blog-card__content">
+                        <div class="post-content">
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <p><?php echo esc_html( wp_trim_words( get_the_excerpt(), 28 ) ); ?></p>
+                            <p><?php echo esc_html( wp_trim_words( get_the_excerpt(), 26 ) ); ?></p>
                         </div>
                     </article>
                     <?php
                 endwhile;
                 wp_reset_postdata();
             else :
-                echo '<p>' . esc_html__( 'Tag your posts with the "inspiration" category to feature them here.', 'solid-cement' ) . '</p>';
+                ?>
+                <p><?php esc_html_e( 'Add inspirational posts to guide visitors through your fairy garden possibilities.', 'solid-cement' ); ?></p>
+                <?php
             endif;
             ?>
         </div>
     </div>
 </section>
 
-<section class="page-section" id="booking">
-    <div class="container media-grid">
-        <div>
-            <span class="section-subtitle"><?php esc_html_e( 'Booking', 'solid-cement' ); ?></span>
-            <h2 class="section-title"><?php esc_html_e( 'Bring the Magic of Fairy Garden to Your Home', 'solid-cement' ); ?></h2>
-            <p><?php esc_html_e( 'We create bespoke layouts that balance botanicals, lighting, and weatherproof cement garden decor built to sparkle after every rain.', 'solid-cement' ); ?></p>
-        </div>
-        <div>
-            <?php get_template_part( 'template-parts/forms/booking' ); ?>
-        </div>
+<section class="page-section">
+    <div class="container card-style-a">
+        <h2><?php esc_html_e( 'Bring the Magic Home', 'solid-cement' ); ?></h2>
+        <p><?php esc_html_e( 'Invite us to craft a customised fairy garden experience. From layout planning to interactive lighting, every moment is considered.', 'solid-cement' ); ?></p>
+        <a class="btn btn--light" href="#quote"><?php esc_html_e( 'Book Your Consultation', 'solid-cement' ); ?></a>
     </div>
 </section>
 <?php
-get_template_part(
-    'template-parts/components/quote-section',
-    null,
-    [
-        'section_id'  => 'quote',
-        'subtitle'    => __( 'Custom Fairy Garden Quote', 'solid-cement' ),
-        'title'       => __( 'Design an Enchanted Retreat', 'solid-cement' ),
-        'copy'        => __( 'Tell us about the space you are styling and we will propose a layout with lighting, pathways, and whimsical sculptures.', 'solid-cement' ),
-        'extra_class' => 'page-section--alt',
-    ]
-);
-?>
-<?php
+if ( have_posts() ) :
+    while ( have_posts() ) :
+        the_post();
+        if ( trim( get_the_content() ) ) :
+            ?>
+            <section class="page-section page-section--content">
+                <div class="container">
+                    <?php the_content(); ?>
+                </div>
+            </section>
+            <?php
+        endif;
+    endwhile;
+endif;
 get_footer();

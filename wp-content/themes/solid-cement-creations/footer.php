@@ -6,45 +6,26 @@
  */
 ?>
 </main>
-<footer class="site-footer">
+<footer class="site-footer" id="contact">
     <div class="container">
-        <div class="site-footer__grid">
-            <div>
-                <h4>Visit Us</h4>
-                <p>Solid Cement Creations<br />
-                    12 Artisan Way<br />
-                    Brisbane, QLD 4000
-                </p>
-                <p><strong>Hours</strong><br />
-                    Mon – Fri: 8am – 5pm<br />
-                    Sat: 9am – 2pm
-                </p>
-            </div>
-            <div>
-                <h4>Stay Connected</h4>
-                <ul>
-                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
-                    <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
-                    <li><a href="https://pinterest.com" target="_blank" rel="noopener">Pinterest</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Feedback</h4>
-                <form class="feedback-form" method="post" action="#">
-                    <div class="form-control">
-                        <label for="footer-name">Name</label>
-                        <input type="text" id="footer-name" name="footer_name" required />
-                    </div>
-                    <div class="form-control">
-                        <label for="footer-message">Share Your Thoughts</label>
-                        <textarea id="footer-message" name="footer_message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Feedback</button>
-                </form>
-            </div>
+        <div>
+            <h2><?php esc_html_e( 'Let’s create something magical.', 'solid-cement' ); ?></h2>
+            <p><?php esc_html_e( 'Handcrafted gnomes, fairy gardens, and bespoke cement artistry for luxurious outdoor spaces.', 'solid-cement' ); ?></p>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; <?php echo esc_html( current_time( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. All Rights Reserved.</p>
+        <div class="footer-nav">
+            <?php
+            wp_nav_menu(
+                [
+                    'theme_location' => 'footer',
+                    'container'      => false,
+                    'fallback_cb'    => '__return_false',
+                    'menu_class'     => 'menu-items',
+                ]
+            );
+            ?>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; <?php echo esc_html( current_time( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?> · <a href="mailto:studio@solidcementcreations.com">studio@solidcementcreations.com</a></p>
         </div>
     </div>
 </footer>

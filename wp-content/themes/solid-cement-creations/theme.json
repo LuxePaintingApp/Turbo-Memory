@@ -1,0 +1,53 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                { "slug": "primary", "name": "Bright Pink", "color": "#ff2f92" },
+                { "slug": "primary-dark", "name": "Deep Pink", "color": "#cc1970" },
+                { "slug": "background", "name": "White", "color": "#ffffff" },
+                { "slug": "text", "name": "Ink", "color": "#1a1a1a" },
+                { "slug": "muted", "name": "Muted", "color": "#4a4a4a" }
+            ]
+        },
+        "custom": {
+            "typography": {
+                "fontFamilies": {
+                    "heading": "'Breathing', 'Helvetica Neue', Arial, sans-serif",
+                    "body": "'Breathing', 'Helvetica Neue', Arial, sans-serif"
+                }
+            }
+        },
+        "typography": {
+            "fontFamilies": [
+                {
+                    "slug": "breathing",
+                    "name": "Breathing",
+                    "fontFamily": "'Breathing', 'Helvetica Neue', Arial, sans-serif"
+                }
+            ],
+            "fontSizes": [
+                { "slug": "xs", "size": "0.875rem", "name": "XS" },
+                { "slug": "sm", "size": "1rem", "name": "Small" },
+                { "slug": "base", "size": "1.125rem", "name": "Base" },
+                { "slug": "lg", "size": "1.5rem", "name": "Large" },
+                { "slug": "xl", "size": "2.5rem", "name": "XL" }
+            ]
+        },
+        "layout": {
+            "contentSize": "720px",
+            "wideSize": "1160px"
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "#ffffff",
+            "text": "#1a1a1a"
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--breathing)",
+            "fontSize": "var(--wp--preset--font-size--base)",
+            "lineHeight": "1.6"
+        }
+    }
+}

@@ -3,15 +3,11 @@ Theme Name: Solid Cement Creations
 Theme URI: https://solidcementcreations.example.com
 Author: Turbo Memory Theme Team
 Author URI: https://solidcementcreations.example.com
-Description: A luxurious, high-impact WordPress theme tailored for Solid Cement Creations with bespoke layouts for garden decor, fairy gardens, gnome products, and restoration services.
-Version: 1.0.0
+Description: A luxurious Elementor-ready theme with bold pink accents, curved cards, and bespoke layouts for garden artistry brands.
+Version: 2.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: solid-cement
 */
 
-/*
- * This lightweight loader keeps WordPress theme scanners happy while
- * delegating the heavy lifting to the compiled bundle in assets/css.
- */
-@import url('./assets/css/theme.css');
+/* Primary styles are loaded from assets/css/theme.css. */
