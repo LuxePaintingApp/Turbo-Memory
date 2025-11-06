@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | Digital Marketing Strategist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: rgba(15, 23, 42, 0.75);
+            --accent: #38bdf8;
+            --accent-soft: rgba(56, 189, 248, 0.12);
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+            --gradient: linear-gradient(135deg, rgba(56,189,248,0.25), rgba(59,130,246,0.25));
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top left, rgba(56,189,248,0.12), transparent 45%),
+                        radial-gradient(circle at bottom right, rgba(59,130,246,0.12), transparent 55%),
+                        var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            backdrop-filter: blur(16px);
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 1.2rem 1.5rem;
+        }
+
+        .logo {
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .cta-link {
+            padding: 0.55rem 1.25rem;
+            border-radius: 999px;
+            border: 1px solid rgba(56, 189, 248, 0.5);
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-link:hover {
+            background: var(--accent);
+            color: #0f172a;
+        }
+
+        main {
+            padding: 0 1.5rem 4rem;
+        }
+
+        section {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        .hero {
+            display: grid;
+            gap: 2.5rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.25rem, 5vw, 3.6rem);
+            margin: 0;
+            line-height: 1.15;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.85rem;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #0f172a;
+            box-shadow: 0 20px 35px -20px rgba(56, 189, 248, 0.9);
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(148, 163, 184, 0.3);
+            color: var(--text);
+        }
+
+        .btn-primary:hover,
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 25px 40px -25px rgba(56, 189, 248, 0.9);
+        }
+
+        .card-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .card {
+            padding: 1.75rem;
+            background: var(--card);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-radius: 1.2rem;
+            box-shadow: 0 25px 50px -30px rgba(15, 23, 42, 0.8);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .pill-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.25rem;
+        }
+
+        .pill {
+            padding: 0.45rem 0.95rem;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .metrics {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .metric {
+            padding: 1.5rem;
+            border-radius: 1.1rem;
+            background: var(--gradient);
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            text-align: center;
+        }
+
+        .metric strong {
+            display: block;
+            font-size: 2rem;
+            color: var(--accent);
+        }
+
+        .section-heading {
+            margin-bottom: 2rem;
+        }
+
+        .section-heading h2 {
+            margin: 0;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+        }
+
+        .section-heading p {
+            margin: 0.5rem 0 0;
+            color: var(--muted);
+        }
+
+        .timeline {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .timeline-step {
+            display: grid;
+            gap: 0.5rem;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+        }
+
+        .timeline-step span {
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: 0.08em;
+        }
+
+        .testimonials {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .testimonial {
+            padding: 1.75rem;
+            border-radius: 1.2rem;
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+        }
+
+        .testimonial p {
+            margin: 0 0 1.25rem;
+            font-style: italic;
+        }
+
+        .testimonial strong {
+            display: block;
+            color: var(--accent);
+        }
+
+        .case-studies {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .case-card {
+            display: grid;
+            gap: 1rem;
+            padding: 1.75rem;
+            border-radius: 1.2rem;
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+        }
+
+        .case-card ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: var(--muted);
+        }
+
+        .contact {
+            display: grid;
+            gap: 1rem;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(14, 116, 144, 0.1));
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            text-align: center;
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1.5rem 4rem;
+            color: var(--muted);
+            background: rgba(15, 23, 42, 0.85);
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                align-items: center;
+            }
+
+            .card-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .case-studies {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .testimonials {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .metrics {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <span class="logo">Alex Morgan</span>
+            <a class="cta-link" href="#contact">Book a Strategy Call</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div>
+                <h1>Digital marketing strategist turning curious clicks into loyal customers.</h1>
+                <p>I build growth playbooks for mission-led brands using a balanced mix of data, storytelling, and always-on experimentation. My campaigns have generated $12M+ in trackable revenue while uplifting the communities they serve.</p>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="#contact">Start a Project</a>
+                    <a class="btn-secondary" href="#case-studies">View Case Studies</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>How I can help</h3>
+                <p>Full-funnel strategies designed to launch, scale, and nurture your brand.</p>
+                <div class="pill-group">
+                    <span class="pill">Go-to-market campaigns</span>
+                    <span class="pill">Lifecycle automation</span>
+                    <span class="pill">Performance creative</span>
+                    <span class="pill">Analytics & attribution</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="section-heading">
+                <h2>Strategy with creative momentum</h2>
+                <p>Every engagement is structured around measurable objectives, rapid experimentation, and transparent reporting.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Growth Roadmaps</h3>
+                    <p>90-day playbooks covering positioning, messaging, channel mix, and KPIs—complete with sprint-by-sprint priorities.</p>
+                </article>
+                <article class="card">
+                    <h3>Lifecycle Marketing</h3>
+                    <p>High-performing email, SMS, and loyalty flows powered by segmentation, personalization, and creative testing.</p>
+                </article>
+                <article class="card">
+                    <h3>Paid Media Acceleration</h3>
+                    <p>Full-funnel ad management across Meta, Google, LinkedIn, and TikTok, optimized for CAC efficiency and retention.</p>
+                </article>
+                <article class="card">
+                    <h3>Analytics & Enablement</h3>
+                    <p>Attribution audits, dashboard builds, and team enablement sessions to help you make faster, smarter marketing decisions.</p>
+                </article>
+            </div>
+            <div class="metrics">
+                <div class="metric">
+                    <strong>327%</strong>
+                    Avg. uplift in qualified pipeline for B2B SaaS clients
+                </div>
+                <div class="metric">
+                    <strong>$12M</strong>
+                    Revenue attributed to campaigns managed end-to-end
+                </div>
+                <div class="metric">
+                    <strong>48%</strong>
+                    Reduction in customer acquisition cost across top accounts
+                </div>
+                <div class="metric">
+                    <strong>4.9/5</strong>
+                    Client satisfaction rating over the last 24 months
+                </div>
+            </div>
+        </section>
+
+        <section id="case-studies">
+            <div class="section-heading">
+                <h2>Selected wins</h2>
+                <p>A snapshot of multi-channel programs crafted for growth-stage brands.</p>
+            </div>
+            <div class="case-studies">
+                <article class="case-card">
+                    <h3>EcoSip Beverages — DTC Launch</h3>
+                    <p>GTM strategy blending influencer seeding, performance creative, and retention flows.</p>
+                    <ul>
+                        <li>Scaled to $420k monthly revenue within 5 months</li>
+                        <li>33% repeat purchase rate through lifecycle automation</li>
+                        <li>Creative testing framework producing 6x ROAS winners</li>
+                    </ul>
+                </article>
+                <article class="case-card">
+                    <h3>FlowSync — B2B SaaS Expansion</h3>
+                    <p>Account-based marketing plus thought-leadership engine targeting enterprise operations teams.</p>
+                    <ul>
+                        <li>327% pipeline growth quarter-over-quarter</li>
+                        <li>Sales cycle shortened by 19 days via nurture tracks</li>
+                        <li>Custom MQL scoring aligned marketing & sales</li>
+                    </ul>
+                </article>
+                <article class="case-card">
+                    <h3>BrightFuture Nonprofit — Advocacy Campaign</h3>
+                    <p>Cross-channel storytelling with grassroots activations to drive donor engagement.</p>
+                    <ul>
+                        <li>58% lift in monthly donors year-over-year</li>
+                        <li>Community ambassador program fueling 5M impressions</li>
+                        <li>Data dashboards giving stakeholders live impact visibility</li>
+                    </ul>
+                </article>
+                <article class="case-card">
+                    <h3>NovaHealth Clinics — Local Growth</h3>
+                    <p>Localized search, review funnels, and educational content to build trust before visits.</p>
+                    <ul>
+                        <li>58% increase in booked consultations</li>
+                        <li>Top-3 map pack rankings across 18 locations</li>
+                        <li>Referral partnerships contributing 24% of new patients</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="section-heading">
+                <h2>Client notes</h2>
+                <p>Trusted partners sharing candid feedback on collaborative marketing wins.</p>
+            </div>
+            <div class="testimonials">
+                <article class="testimonial">
+                    <p>“Alex rebuilt our lifecycle engine from the ground up. We finally have a clear view of attribution and the numbers keep trending upward.”</p>
+                    <strong>Jared Lin · VP of Growth, FlowSync</strong>
+                </article>
+                <article class="testimonial">
+                    <p>“Data-savvy yet deeply human. Our donors feel seen, and our campaigns are more effective than ever.”</p>
+                    <strong>Maya Rodriguez · Director, BrightFuture</strong>
+                </article>
+            </div>
+        </section>
+
+        <section id="process">
+            <div class="section-heading">
+                <h2>How we’ll work together</h2>
+                <p>A transparent, collaborative framework built to deliver momentum from week one.</p>
+            </div>
+            <div class="timeline">
+                <article class="timeline-step">
+                    <span>01 • Align</span>
+                    <h3>Discovery & immersion</h3>
+                    <p>Deep-dive sessions with your key stakeholders, existing data review, and a gap analysis to uncover the fastest growth levers.</p>
+                </article>
+                <article class="timeline-step">
+                    <span>02 • Architect</span>
+                    <h3>Strategy & experimentation plan</h3>
+                    <p>Translate insights into channel priorities, messaging pillars, and an experimentation roadmap with success metrics.</p>
+                </article>
+                <article class="timeline-step">
+                    <span>03 • Activate</span>
+                    <h3>Launch & optimize</h3>
+                    <p>Build creative, deploy campaigns, and iterate weekly with live dashboards that track spend, CAC, LTV, and retention.</p>
+                </article>
+                <article class="timeline-step">
+                    <span>04 • Amplify</span>
+                    <h3>Scale & enable</h3>
+                    <p>Codify learnings, empower your team with playbooks, and identify the next horizon of growth opportunities.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-heading">
+                <h2>Meet Alex</h2>
+                <p>Marketer, data geek, and storyteller with a decade of experience across eCommerce, SaaS, and social impact brands.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Experience highlights</h3>
+                    <ul>
+                        <li>Director of Growth @ Elevate Labs</li>
+                        <li>Lifecycle Lead @ Lumos Learning</li>
+                        <li>Fractional CMO for 7 venture-backed startups</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Google Analytics 4 Certification</li>
+                        <li>Meta Certified Media Buying Professional</li>
+                        <li>HubSpot Inbound Marketing Certification</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact">
+                <h2>Ready to accelerate your growth?</h2>
+                <p>Drop a line at <a href="mailto:hello@alexmorganmarketing.com">hello@alexmorganmarketing.com</a> or grab 30 minutes on my calendar.</p>
+                <a class="btn-primary" href="mailto:hello@alexmorganmarketing.com">Schedule a Call</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © <span id="year"></span> Alex Morgan — Digital Marketing Strategist. Crafting campaigns with intention and measurable impact.
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
