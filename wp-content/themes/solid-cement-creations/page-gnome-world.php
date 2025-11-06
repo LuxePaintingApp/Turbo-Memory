@@ -7,6 +7,15 @@
 
 global $post;
 get_header();
+
+if ( solidcement_can_use_elementor() ) {
+    while ( have_posts() ) {
+        the_post();
+        the_content();
+    }
+    get_footer();
+    return;
+}
 ?>
 <section class="page-hero">
     <div class="container">

@@ -8,6 +8,17 @@
 global $post;
 get_header();
 
+$current_id = isset( $post ) ? $post->ID : 0;
+
+if ( solidcement_can_use_elementor( $current_id ) ) {
+    while ( have_posts() ) {
+        the_post();
+        the_content();
+    }
+    get_footer();
+    return;
+}
+
 $hero_query = new WP_Query(
     [
         'post_type'      => 'solidcement_collection',
