@@ -1,0 +1,386 @@
+{
+  "version": "0.4",
+  "title": "Renew and Restore",
+  "type": "page",
+  "content": [
+    {
+      "id": "before-after",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "before-after-heading",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "before-after-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Before & After",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "before-after-inner",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "50",
+                "gap": "extended"
+              },
+              "elements": [
+                {
+                  "id": "before-column",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "before-heading",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "Before",
+                        "align": "center"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    },
+                    {
+                      "id": "before-image",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=900&q=80"
+                        },
+                        "image_size": "full"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "after-column",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "after-heading",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "title": "After",
+                        "align": "center"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    },
+                    {
+                      "id": "after-image",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
+                        },
+                        "image_size": "full"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "common-restorations",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#fff5f8",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "restorations-heading",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "restorations-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Common Restorations",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "restorations-inner",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "25",
+                "gap": "wide"
+              },
+              "elements": [
+                {
+                  "id": "restoration-cracks",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-cracks",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-tools",
+                        "title_text": "Structural Repair",
+                        "description_text": "Stabilising and rebuilding cracked or weathered pieces.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "restoration-finishes",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-finishes",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-spray-can",
+                        "title_text": "Finish Renewal",
+                        "description_text": "Reapplying luxe pigments, sealants, and protective coats.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "restoration-water",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-water",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-water",
+                        "title_text": "Water Feature Service",
+                        "description_text": "Upgrading pumps, lighting, and sealing basins.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "restoration-custom",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-custom",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-star",
+                        "title_text": "Custom Enhancements",
+                        "description_text": "Adding new sculptural details or structural supports.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "restoration-faq",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "faq-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "faq-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Restoration FAQs",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "faq-toggle",
+              "elType": "widget",
+              "widgetType": "toggle",
+              "settings": {
+                "toggle": [
+                  {
+                    "title": "How long does a restoration take?",
+                    "content": "Most projects are complete within 2-4 weeks depending on complexity and curing times.",
+                    "active": "yes"
+                  },
+                  {
+                    "title": "Do you match original finishes?",
+                    "content": "Yes, our pigments and sealants are custom mixed to mirror or elevate the original finish."
+                  },
+                  {
+                    "title": "Can you repair water features on-site?",
+                    "content": "We service pumps and basins on-site and can transport elements to our studio if required."
+                  }
+                ]
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "recent-projects",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "recent-projects-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "recent-projects-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Recent Restorations",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "recent-projects-carousel",
+              "elType": "widget",
+              "widgetType": "image-carousel",
+              "settings": {
+                "slides": [
+                  {"id": 1, "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80", "caption": "Garden Pavilion"},
+                  {"id": 2, "url": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80", "caption": "Heritage Fountain"},
+                  {"id": 3, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80", "caption": "Water Feature Renewal"}
+                ],
+                "navigation": "both"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

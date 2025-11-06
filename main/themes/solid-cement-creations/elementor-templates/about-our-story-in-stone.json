@@ -1,0 +1,408 @@
+{
+  "version": "0.4",
+  "title": "Our Story in Stone",
+  "type": "page",
+  "content": [
+    {
+      "id": "brand-story",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "padding": {
+          "unit": "px",
+          "top": "140",
+          "right": "60",
+          "bottom": "140",
+          "left": "60",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+        },
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(255,255,255,0.82)"
+      },
+      "elements": [
+        {
+          "id": "brand-story-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "brand-story-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Story in Stone",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ff1493",
+                "typography_typography": "custom",
+                "typography_font_family": "Breathing"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "brand-story-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>For over two decades, Solid Cement Creations has shaped immersive outdoor art across Australia. We blend sculptural tradition with contemporary luxury, crafting heirloom-quality pieces that honor the landscape.</p>",
+                "align": "center",
+                "typography_typography": "custom",
+                "typography_font_family": "Breathing"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "meet-the-maker",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "meet-the-maker-inner",
+          "elType": "section",
+          "isInner": true,
+          "settings": {
+            "structure": "50"
+          },
+          "elements": [
+            {
+              "id": "meet-image-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 50
+              },
+              "elements": [
+                {
+                  "id": "maker-image",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80"
+                    },
+                    "image_size": "full"
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            },
+            {
+              "id": "meet-text-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 50
+              },
+              "elements": [
+                {
+                  "id": "maker-heading",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Meet the Maker",
+                    "header_size": "h2",
+                    "title_color": "#ff1493"
+                  },
+                  "elements": [],
+                  "isInner": true
+                },
+                {
+                  "id": "maker-text",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Founder and lead artisan Elise Laurent sculpts every collection with meticulous attention to texture, proportion, and storytelling. Her studio team includes ceramicists, stone masons, and lighting designers who ensure each installation sings day and night.</p>"
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "behind-the-scenes",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff5f8"
+      },
+      "elements": [
+        {
+          "id": "behind-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "behind-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Behind the Scenes",
+                "header_size": "h2",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "behind-video",
+              "elType": "widget",
+              "widgetType": "video",
+              "settings": {
+                "youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+                "aspect_ratio": "169"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "mission-values",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "values-heading",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "values-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Mission & Values",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "values-inner",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "25",
+                "gap": "wide"
+              },
+              "elements": [
+                {
+                  "id": "value-craft",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-craft",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-chess-queen",
+                        "title_text": "Artisan Excellence",
+                        "description_text": "Every piece is hand-finished and signed by the maker.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "value-sustain",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-sustain",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-leaf",
+                        "title_text": "Sustainable Sourcing",
+                        "description_text": "We source aggregates and pigments locally to minimise impact.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "value-service",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-service",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-handshake",
+                        "title_text": "Concierge Service",
+                        "description_text": "White-glove installation and lifetime care guidance.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "value-innovation",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-innovation",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-lightbulb",
+                        "title_text": "Innovative Design",
+                        "description_text": "We push cement into fluid, sculptural expressions.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "customer-highlights",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "customer-gallery",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "customer-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Customer Highlights",
+                "header_size": "h2",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "customer-gallery-widget",
+              "elType": "widget",
+              "widgetType": "image-gallery",
+              "settings": {
+                "gallery_layout": "grid",
+                "columns": "3",
+                "gallery": [
+                  {"id": 1, "url": "https://images.unsplash.com/photo-1455587734955-081b22074882?auto=format&fit=crop&w=800&q=80", "caption": "Harbourview Sanctuary"},
+                  {"id": 2, "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80", "caption": "Forest Estate"},
+                  {"id": 3, "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80", "caption": "Fairy Grove"},
+                  {"id": 4, "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80", "caption": "Coastal Retreat"},
+                  {"id": 5, "url": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80", "caption": "Urban Oasis"},
+                  {"id": 6, "url": "https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=800&q=80", "caption": "Gnome Pavilion"}
+                ]
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}
