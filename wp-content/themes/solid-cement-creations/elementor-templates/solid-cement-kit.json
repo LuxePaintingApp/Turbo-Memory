@@ -1,0 +1,48 @@
+{
+  "version": "0.4",
+  "title": "Solid Cement Creations Global Kit",
+  "type": "kit",
+  "content": [],
+  "settings": {
+    "system_colors": [
+      { "_id": "primary", "title": "Bright Pink", "color": "#ff3fa4" },
+      { "_id": "secondary", "title": "Soft Blush", "color": "#ffd6eb" },
+      { "_id": "text", "title": "Charcoal", "color": "#3a3a45" },
+      { "_id": "accent", "title": "Gold Accent", "color": "#c9a857" }
+    ],
+    "system_typography": [
+      {
+        "_id": "primary",
+        "title": "Primary Heading",
+        "typography_typography": "custom",
+        "typography_font_family": "Breathing",
+        "typography_font_weight": "400",
+        "typography_text_transform": "none",
+        "typography_font_style": "normal",
+        "typography_letter_spacing": { "unit": "px", "size": 0, "sizes": [] },
+        "typography_line_height": { "unit": "em", "size": 1.2, "sizes": [] }
+      },
+      {
+        "_id": "secondary",
+        "title": "Body Text",
+        "typography_typography": "custom",
+        "typography_font_family": "Breathing",
+        "typography_font_weight": "300",
+        "typography_text_transform": "none",
+        "typography_font_style": "normal",
+        "typography_letter_spacing": { "unit": "px", "size": 0, "sizes": [] },
+        "typography_line_height": { "unit": "em", "size": 1.6, "sizes": [] }
+      }
+    ],
+    "custom_colors": [],
+    "custom_typography": [],
+    "typography_typography": "custom",
+    "typography_font_family": "Breathing",
+    "typography_line_height": { "unit": "em", "size": 1.6, "sizes": [] },
+    "container_width": { "unit": "px", "size": 1200, "sizes": [] },
+    "space_between_widgets": { "unit": "px", "size": 20, "sizes": [] },
+    "global_spacing": { "unit": "px", "size": 100, "sizes": [] },
+    "background_background": "classic",
+    "background_color": "#ffffff"
+  }
+}

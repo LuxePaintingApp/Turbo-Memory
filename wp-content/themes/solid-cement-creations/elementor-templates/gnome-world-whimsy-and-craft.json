@@ -1,0 +1,448 @@
+{
+  "version": "0.4",
+  "title": "Gnome World \u2014 Whimsy and Craft",
+  "type": "page",
+  "content": [
+    {
+      "id": "gnome_hero",
+      "elType": "section",
+      "settings": {
+        "height": "min-height",
+        "height_tablet": "default",
+        "min_height": {
+          "unit": "vh",
+          "size": 70,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "0",
+          "bottom": "120",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://via.placeholder.com/1600x900/ff3fa4/ffffff?text=Gnome+World",
+          "id": "",
+          "alt": "Gnome collection"
+        },
+        "background_overlay": "yes",
+        "background_overlay_color": "rgba(58,58,69,0.45)"
+      },
+      "elements": [
+        {
+          "id": "gnome_hero_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "horizontal_align": "center"
+          },
+          "elements": [
+            {
+              "id": "gnome_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Whimsy and Craft",
+                "header_size": "h1",
+                "align": "center",
+                "color": "#ffffff"
+              }
+            },
+            {
+              "id": "gnome_hero_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#ffffff;\">Premium cement gnomes, sealed for brilliance and designed to bring personality to every landscape.</p>",
+                "align": "center"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "gnome_featured",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "gnome_featured_heading",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gnome_featured_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Featured Collections",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "gnome_featured_inner",
+              "elType": "section",
+              "settings": {
+                "structure": "33"
+              },
+              "elements": [
+                {
+                  "id": "gnome_collection_one",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 33,
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "10",
+                      "bottom": "10",
+                      "left": "10",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "gnome_box_one",
+                      "elType": "widget",
+                      "widgetType": "image-box",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/500x500/ffe5f2/3a3a45?text=Royal+Gnomes"
+                        },
+                        "title": "Royal Court",
+                        "description": "Majestic guardians with metallic highlights.",
+                        "link": {
+                          "url": "#quote",
+                          "is_external": "",
+                          "nofollow": ""
+                        }
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "gnome_collection_two",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 33,
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "10",
+                      "bottom": "10",
+                      "left": "10",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "gnome_box_two",
+                      "elType": "widget",
+                      "widgetType": "image-box",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/500x500/ffd6eb/3a3a45?text=Garden+Companions"
+                        },
+                        "title": "Garden Companions",
+                        "description": "Playful expressions to enliven pathways.",
+                        "link": {
+                          "url": "#quote"
+                        }
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "gnome_collection_three",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 33,
+                    "padding": {
+                      "unit": "px",
+                      "top": "10",
+                      "right": "10",
+                      "bottom": "10",
+                      "left": "10",
+                      "isLinked": false
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "gnome_box_three",
+                      "elType": "widget",
+                      "widgetType": "image-box",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/500x500/ffc0e0/3a3a45?text=Seasonal+Sprites"
+                        },
+                        "title": "Seasonal Sprites",
+                        "description": "Limited-edition releases inspired by the seasons.",
+                        "link": {
+                          "url": "#quote"
+                        }
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "gnome_custom",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "gnome_custom_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "20",
+              "right": "20",
+              "bottom": "20",
+              "left": "20",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "custom_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Custom Gnomes",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "custom_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Design your own gnome with personalised attire, monograms, and finishes. Our artisans sculpt a signature piece just for you.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "custom_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Design Your Own Gnome",
+                "align": "center",
+                "link": {
+                  "url": "#quote"
+                },
+                "size": "lg"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "gnome_testimonials",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "gnome_testimonials_heading",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gnome_testimonials_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Collector Praise",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "gnome_testimonials_inner",
+              "elType": "section",
+              "settings": {
+                "structure": "33"
+              },
+              "elements": [
+                {
+                  "id": "gnome_testimonial_one",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 33,
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "gnome_testimonial_image_one",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/300x300/ffe5f2/3a3a45?text=Gnome+Set"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "gnome_testimonial_text_one",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>\"The detail is remarkable&mdash;each gnome feels alive.\"<br /><strong>\u2014 Bianca M.</strong></p>",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "gnome_testimonial_two",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 33,
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "gnome_testimonial_image_two",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/300x300/ffd6eb/3a3a45?text=Garden+Display"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "gnome_testimonial_text_two",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>\"Custom colours matched our branding perfectly.\"<br /><strong>\u2014 The Olive Grove Retreat</strong></p>",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "gnome_testimonial_three",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 33,
+                    "padding": {
+                      "unit": "px",
+                      "top": "20",
+                      "right": "20",
+                      "bottom": "20",
+                      "left": "20",
+                      "isLinked": true
+                    }
+                  },
+                  "elements": [
+                    {
+                      "id": "gnome_testimonial_image_three",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://via.placeholder.com/300x300/ffc0e0/3a3a45?text=Collector"
+                        },
+                        "align": "center"
+                      }
+                    },
+                    {
+                      "id": "gnome_testimonial_text_three",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>\"Our limited edition gnomes sell out instantly.\"<br /><strong>\u2014 Luxe Garden Boutique</strong></p>",
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

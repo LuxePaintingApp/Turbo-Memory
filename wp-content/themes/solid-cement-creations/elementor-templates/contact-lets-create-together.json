@@ -1,0 +1,289 @@
+{
+  "version": "0.4",
+  "title": "Contact \u2014 Let\u2019s Create Together",
+  "type": "page",
+  "content": [
+    {
+      "id": "contact_intro",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "contact_intro_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "contact_intro_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Let\u2019s Create Together",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "contact_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Complete the form below or request a custom quote. Our artisans will be in touch within two business days.</p>",
+                "align": "center"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "contact_forms",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "0",
+          "bottom": "60",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "contact_forms_tabs",
+          "elType": "widget",
+          "widgetType": "tabs",
+          "settings": {
+            "tabs": [
+              {
+                "_id": "tab_contact",
+                "tab_title": "Contact Form",
+                "tab_content": "[contact-form-7 id=\"contact\"]"
+              },
+              {
+                "_id": "tab_booking",
+                "tab_title": "Booking Request",
+                "tab_content": "[contact-form-7 id=\"booking-request\"]"
+              }
+            ]
+          }
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "contact_map",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "0",
+          "bottom": "60",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "contact_map_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "contact_map_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Visit Our Studio",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "contact_map_shortcode",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[google-map address=\"23 Artisan Lane, Brisbane QLD\"]"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "contact_feedback",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "0",
+          "bottom": "60",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "contact_feedback_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "contact_feedback_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Share Feedback",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "contact_feedback_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>We value your experience. Complete the quick survey to help us refine future creations.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "contact_feedback_form",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[feedback-form id=\"studio-feedback\"]"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "contact_business",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "0",
+          "bottom": "60",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "contact_business_inner",
+          "elType": "section",
+          "settings": {
+            "structure": "50"
+          },
+          "elements": [
+            {
+              "id": "business_hours_col",
+              "elType": "column",
+              "settings": {
+                "_column_size": 50,
+                "padding": {
+                  "unit": "px",
+                  "top": "10",
+                  "right": "20",
+                  "bottom": "10",
+                  "left": "20",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "business_hours_heading",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Business Hours",
+                    "header_size": "h3"
+                  }
+                },
+                {
+                  "id": "business_hours_text",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Mon\u2013Fri: 9:00am \u2013 5:00pm<br />Sat: By appointment<br />Sun: Closed</p>"
+                  }
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "business_social_col",
+              "elType": "column",
+              "settings": {
+                "_column_size": 50,
+                "padding": {
+                  "unit": "px",
+                  "top": "10",
+                  "right": "20",
+                  "bottom": "10",
+                  "left": "20",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "business_social_heading",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Connect Online",
+                    "header_size": "h3"
+                  }
+                },
+                {
+                  "id": "business_social_text",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Instagram: @solidcementcreations<br />Pinterest: /solidcementcreations<br />Facebook: Solid Cement Creations</p>"
+                  }
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "version": "0.4",
+  "title": "Restorations \u2014 Renew and Restore",
+  "type": "page",
+  "content": [
+    {
+      "id": "restore_intro",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "0",
+          "bottom": "100",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "restore_intro_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "restore_intro_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Renew and Restore",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "restore_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Rejuvenate heritage fountains, statues, and bespoke cement features with artisan restoration techniques.</p>",
+                "align": "center"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "restore_before_after",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "0",
+          "bottom": "60",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "restore_before_after_inner",
+          "elType": "section",
+          "settings": {
+            "structure": "50"
+          },
+          "elements": [
+            {
+              "id": "restore_before_col",
+              "elType": "column",
+              "settings": {
+                "_column_size": 50,
+                "padding": {
+                  "unit": "px",
+                  "top": "10",
+                  "right": "10",
+                  "bottom": "10",
+                  "left": "10",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "restore_before_image",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://via.placeholder.com/800x600/cccccc/3a3a45?text=Before"
+                    }
+                  }
+                },
+                {
+                  "id": "restore_before_label",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align:center;font-weight:600;\">Before</p>"
+                  }
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "restore_after_col",
+              "elType": "column",
+              "settings": {
+                "_column_size": 50,
+                "padding": {
+                  "unit": "px",
+                  "top": "10",
+                  "right": "10",
+                  "bottom": "10",
+                  "left": "10",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "restore_after_image",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://via.placeholder.com/800x600/ff3fa4/ffffff?text=After"
+                    }
+                  }
+                },
+                {
+                  "id": "restore_after_label",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"text-align:center;font-weight:600;\">After</p>"
+                  }
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "restore_common",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "restore_common_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "restore_common_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Common Restorations",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "restore_common_inner",
+              "elType": "section",
+              "settings": {
+                "structure": "25"
+              },
+              "elements": [
+                {
+                  "id": "restore_icon_crack",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "restore_box_crack",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Crack Repair",
+                        "description": "Injectable micro-fillers and colour-matched patching.",
+                        "icon": {
+                          "value": "fas fa-band-aid",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "restore_icon_colour",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "restore_box_colour",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Colour Renewal",
+                        "description": "Re-pigmenting and sealing for UV resistance.",
+                        "icon": {
+                          "value": "fas fa-palette",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "restore_icon_struct",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "restore_box_struct",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Structural Stabilisation",
+                        "description": "Reinforcement and base rebuilding.",
+                        "icon": {
+                          "value": "fas fa-landmark",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "restore_icon_detail",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "restore_box_detail",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Detail Renewal",
+                        "description": "Re-carving ornamentation and gilding highlights.",
+                        "icon": {
+                          "value": "fas fa-brush",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "restore_quote",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "restore_quote_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "restore_quote_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Request a Restoration Quote",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "restore_quote_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Share project photos, notes, and preferred finishes to receive a tailored restoration plan.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "restore_quote_form",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[contact-form-7 id=\"restoration-quote\"]"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "restore_projects",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "restore_projects_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "restore_projects_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Recent Projects Showcase",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "restore_projects_carousel",
+              "elType": "widget",
+              "widgetType": "image-carousel",
+              "settings": {
+                "slides": [
+                  {
+                    "_id": "proj1",
+                    "image": {
+                      "url": "https://via.placeholder.com/900x600/ffe5f2/3a3a45?text=Fountain"
+                    }
+                  },
+                  {
+                    "_id": "proj2",
+                    "image": {
+                      "url": "https://via.placeholder.com/900x600/ffd6eb/3a3a45?text=Garden+Urn"
+                    }
+                  },
+                  {
+                    "_id": "proj3",
+                    "image": {
+                      "url": "https://via.placeholder.com/900x600/ffc0e0/3a3a45?text=Heritage+Facade"
+                    }
+                  }
+                ],
+                "slides_to_show": "1",
+                "navigation": "both",
+                "autoplay": "yes",
+                "autoplay_speed": 4500,
+                "infinite": "yes"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

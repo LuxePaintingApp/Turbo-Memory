@@ -1,0 +1,258 @@
+{
+  "version": "0.4",
+  "title": "Blog \u2014 Stories from the Studio",
+  "type": "page",
+  "content": [
+    {
+      "id": "blog_featured",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "blog_featured_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "blog_featured_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Stories from the Studio",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "blog_featured_image",
+              "elType": "widget",
+              "widgetType": "image-box",
+              "settings": {
+                "image": {
+                  "url": "https://via.placeholder.com/1200x600/ffd6eb/3a3a45?text=Featured+Story"
+                },
+                "title": "Featured Post",
+                "description": "Spotlighting the latest bespoke cement installation with design insights and artisan tips.",
+                "link": {
+                  "url": "/blog/featured-story/"
+                }
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "blog_categories",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "0",
+          "bottom": "40",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "blog_categories_inner",
+          "elType": "section",
+          "settings": {
+            "structure": "33"
+          },
+          "elements": [
+            {
+              "id": "category_inspiration",
+              "elType": "column",
+              "settings": {
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "category_inspiration_button",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Inspiration",
+                    "align": "center",
+                    "link": {
+                      "url": "/category/inspiration/"
+                    },
+                    "size": "md"
+                  }
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "category_restoration",
+              "elType": "column",
+              "settings": {
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "category_restoration_button",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Restoration",
+                    "align": "center",
+                    "link": {
+                      "url": "/category/restoration/"
+                    }
+                  }
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "category_tips",
+              "elType": "column",
+              "settings": {
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "category_tips_button",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Design Tips",
+                    "align": "center",
+                    "link": {
+                      "url": "/category/design-tips/"
+                    }
+                  }
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "blog_latest",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "blog_latest_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "blog_latest_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Latest Articles",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "blog_latest_posts",
+              "elType": "widget",
+              "widgetType": "posts",
+              "settings": {
+                "columns": 3,
+                "posts_per_page": 6,
+                "pagination": "numbers"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "blog_subscribe",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "blog_subscribe_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "blog_subscribe_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Subscribe for Studio Stories",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "blog_subscribe_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Join our newsletter for design inspiration, restoration guides, and behind-the-scenes looks at new cement creations.</p>",
+                "align": "center"
+              }
+            },
+            {
+              "id": "blog_subscribe_form",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[newsletter-signup id=\"studio-updates\"]"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}
