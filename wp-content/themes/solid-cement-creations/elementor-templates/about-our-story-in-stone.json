@@ -1,0 +1,451 @@
+{
+  "version": "0.4",
+  "title": "About Us \u2014 Our Story in Stone",
+  "type": "page",
+  "content": [
+    {
+      "id": "brand_story",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "0",
+          "bottom": "100",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://via.placeholder.com/1600x800/ffe5f2/3a3a45?text=Signature+Studio",
+          "id": "",
+          "size": "",
+          "alt": "Studio background"
+        },
+        "background_overlay": "yes",
+        "background_overlay_color": "rgba(255,63,164,0.5)"
+      },
+      "elements": [
+        {
+          "id": "brand_story_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "background_background": "classic",
+            "background_color": "rgba(255,255,255,0.85)",
+            "padding": {
+              "unit": "px",
+              "top": "40",
+              "right": "40",
+              "bottom": "40",
+              "left": "40",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "brand_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Our Story in Stone",
+                "header_size": "h1",
+                "align": "center"
+              }
+            },
+            {
+              "id": "brand_copy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Solid Cement Creations began as a one-kiln studio and has evolved into a destination for luxurious garden art across Australia.</p>",
+                "align": "center"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "meet_maker",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "meet_maker_inner",
+          "elType": "section",
+          "settings": {
+            "structure": "50"
+          },
+          "elements": [
+            {
+              "id": "maker_image_col",
+              "elType": "column",
+              "settings": {
+                "_column_size": 50,
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "20",
+                  "bottom": "0",
+                  "left": "20",
+                  "isLinked": false
+                }
+              },
+              "elements": [
+                {
+                  "id": "maker_image",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {
+                    "image": {
+                      "url": "https://via.placeholder.com/700x900/ffd6eb/3a3a45?text=Master+Artisan",
+                      "id": "",
+                      "alt": "Master artisan"
+                    }
+                  }
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "maker_text_col",
+              "elType": "column",
+              "settings": {
+                "_column_size": 50,
+                "padding": {
+                  "unit": "px",
+                  "top": "0",
+                  "right": "20",
+                  "bottom": "0",
+                  "left": "20",
+                  "isLinked": false
+                },
+                "vertical_align": "middle"
+              },
+              "elements": [
+                {
+                  "id": "maker_heading",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Meet the Maker",
+                    "header_size": "h2"
+                  }
+                },
+                {
+                  "id": "maker_text",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Founder and lead artisan Elise Harrington crafts each piece by hand, layering pigments, sealers, and carving details that elevate every garden.</p>"
+                  }
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": true
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "behind_scenes",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "behind_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "behind_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Behind the Scenes",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "behind_carousel",
+              "elType": "widget",
+              "widgetType": "image-carousel",
+              "settings": {
+                "slides": [
+                  {
+                    "_id": "scene1",
+                    "image": {
+                      "url": "https://via.placeholder.com/900x600/ffb6d9/3a3a45?text=Pouring+Concrete",
+                      "source": "external",
+                      "alt": "Pouring concrete"
+                    }
+                  },
+                  {
+                    "_id": "scene2",
+                    "image": {
+                      "url": "https://via.placeholder.com/900x600/ffc0e0/3a3a45?text=Hand+Detailing",
+                      "source": "external",
+                      "alt": "Detailing cement"
+                    }
+                  },
+                  {
+                    "_id": "scene3",
+                    "image": {
+                      "url": "https://via.placeholder.com/900x600/ffe5f2/3a3a45?text=Studio+Showcase",
+                      "source": "external",
+                      "alt": "Studio showcase"
+                    }
+                  }
+                ],
+                "slides_to_show": "1",
+                "navigation": "both",
+                "autoplay": "yes",
+                "autoplay_speed": 4000,
+                "infinite": "yes"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "mission_values",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "mission_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "mission_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Mission & Values",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "mission_inner",
+              "elType": "section",
+              "settings": {
+                "structure": "25"
+              },
+              "elements": [
+                {
+                  "id": "value_craft",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "icon_craft",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Craftsmanship",
+                        "description": "Each sculpture is hand-finished, sanded, and sealed for longevity.",
+                        "icon": {
+                          "value": "fas fa-hands",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "value_sustain",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "icon_sustain",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Sustainable",
+                        "description": "Locally sourced aggregates and water recycling power our studio.",
+                        "icon": {
+                          "value": "fas fa-leaf",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "value_custom",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "icon_custom",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Custom Collaborations",
+                        "description": "We co-design with clients to create meaningful heirlooms.",
+                        "icon": {
+                          "value": "fas fa-comments",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "value_service",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "icon_service",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Five-Star Service",
+                        "description": "Consultations, installation, and care guidance every step.",
+                        "icon": {
+                          "value": "fas fa-star",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "customer_highlights",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "customer_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "customer_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Customer Highlights",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "customer_gallery",
+              "elType": "widget",
+              "widgetType": "image-gallery",
+              "settings": {
+                "gallery": [
+                  {
+                    "id": "highlight1",
+                    "url": "https://via.placeholder.com/600x600/ffd6eb/3a3a45?text=Garden+Nook"
+                  },
+                  {
+                    "id": "highlight2",
+                    "url": "https://via.placeholder.com/600x600/ff3fa4/ffffff?text=Collector+Gnomes"
+                  },
+                  {
+                    "id": "highlight3",
+                    "url": "https://via.placeholder.com/600x600/ffe5f2/3a3a45?text=Water+Feature"
+                  },
+                  {
+                    "id": "highlight4",
+                    "url": "https://via.placeholder.com/600x600/ffc0e0/3a3a45?text=Fairy+Haven"
+                  }
+                ],
+                "columns": 4,
+                "image_spacing_custom": 15
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

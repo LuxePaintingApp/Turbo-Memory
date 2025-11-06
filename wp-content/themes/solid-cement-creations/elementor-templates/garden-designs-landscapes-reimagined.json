@@ -1,0 +1,342 @@
+{
+  "version": "0.4",
+  "title": "Garden Designs \u2014 Landscapes Reimagined",
+  "type": "page",
+  "content": [
+    {
+      "id": "design_intro",
+      "elType": "section",
+      "settings": {
+        "height": "min-height",
+        "min_height": {
+          "unit": "vh",
+          "size": 60,
+          "sizes": []
+        },
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "0",
+          "bottom": "120",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://via.placeholder.com/1600x800/ffc0e0/3a3a45?text=Garden+Design",
+          "id": "",
+          "alt": "Luxury garden design"
+        },
+        "background_overlay": "yes",
+        "background_overlay_color": "rgba(58,58,69,0.45)"
+      },
+      "elements": [
+        {
+          "id": "design_intro_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "horizontal_align": "center"
+          },
+          "elements": [
+            {
+              "id": "design_intro_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Landscapes Reimagined",
+                "header_size": "h1",
+                "align": "center",
+                "color": "#ffffff"
+              }
+            },
+            {
+              "id": "design_intro_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#ffffff;\">Comprehensive concept, planting, and sculptural design for luxury outdoor environments.</p>",
+                "align": "center"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "design_portfolio",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "design_portfolio_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "design_portfolio_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Portfolio Gallery",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "design_portfolio_gallery",
+              "elType": "widget",
+              "widgetType": "image-gallery",
+              "settings": {
+                "gallery": [
+                  {
+                    "id": "portfolio1",
+                    "url": "https://via.placeholder.com/600x600/ffd6eb/3a3a45?text=Courtyard"
+                  },
+                  {
+                    "id": "portfolio2",
+                    "url": "https://via.placeholder.com/600x600/ff3fa4/ffffff?text=Resort+Pool"
+                  },
+                  {
+                    "id": "portfolio3",
+                    "url": "https://via.placeholder.com/600x600/ffe5f2/3a3a45?text=Hillside"
+                  },
+                  {
+                    "id": "portfolio4",
+                    "url": "https://via.placeholder.com/600x600/ffc0e0/3a3a45?text=Showgarden"
+                  },
+                  {
+                    "id": "portfolio5",
+                    "url": "https://via.placeholder.com/600x600/ffb6d9/3a3a45?text=Outdoor+Dining"
+                  },
+                  {
+                    "id": "portfolio6",
+                    "url": "https://via.placeholder.com/600x600/ffd6eb/3a3a45?text=Water+Feature"
+                  }
+                ],
+                "columns": 3,
+                "image_spacing_custom": 20
+              }
+            },
+            {
+              "id": "design_portfolio_filter",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[portfolio-filter notice=\"Tap filters to explore Courtyard, Coastal, or Estate projects.\"]"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "design_process",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff6fb"
+      },
+      "elements": [
+        {
+          "id": "design_process_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "design_process_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Design Process",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "design_process_inner",
+              "elType": "section",
+              "settings": {
+                "structure": "25"
+              },
+              "elements": [
+                {
+                  "id": "process_consult",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "icon_consult",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Consult",
+                        "description": "On-site discovery and style direction.",
+                        "icon": {
+                          "value": "fas fa-comments",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "process_design",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "icon_design",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Design",
+                        "description": "Scaled plans, plant palettes, and renders.",
+                        "icon": {
+                          "value": "fas fa-drafting-compass",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "process_create",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "icon_create",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Create",
+                        "description": "Crafting bespoke cement features and sculptures.",
+                        "icon": {
+                          "value": "fas fa-chess-knight",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "process_install",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "icon_install",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title": "Install",
+                        "description": "Managed installs with white-glove detailing.",
+                        "icon": {
+                          "value": "fas fa-tools",
+                          "library": "fa-solid"
+                        },
+                        "align": "center"
+                      }
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "design_success",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "design_success_column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "design_success_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Client Success Stories",
+                "header_size": "h2",
+                "align": "center"
+              }
+            },
+            {
+              "id": "design_success_video",
+              "elType": "widget",
+              "widgetType": "video",
+              "settings": {
+                "video_type": "youtube",
+                "url": "https://www.youtube.com/watch?v=ysz5S6PUM-U",
+                "controls": "yes",
+                "mute": "yes"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

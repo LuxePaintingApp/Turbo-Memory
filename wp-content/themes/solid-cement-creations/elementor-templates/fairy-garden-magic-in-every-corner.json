@@ -1,0 +1,144 @@
+{
+  "version": "0.4",
+  "title": "Fairy Garden — Magic in Every Corner",
+  "type": "page",
+  "content": [
+    {
+      "id": "fairy_hero",
+      "elType": "section",
+      "settings": {
+        "height": "min-height",
+        "min_height": {"unit": "vh", "size": 70, "sizes": []},
+        "padding": {"unit": "px", "top": "140", "right": "0", "bottom": "140", "left": "0", "isLinked": false},
+        "background_background": "classic",
+        "background_image": {"url": "https://via.placeholder.com/1600x900/ffe5f2/3a3a45?text=Fairy+Garden", "id": "", "alt": "Fairy garden"},
+        "background_overlay": "yes",
+        "background_overlay_color": "rgba(255,63,164,0.45)"
+      },
+      "elements": [
+        {
+          "id": "fairy_hero_column",
+          "elType": "column",
+          "settings": {"_column_size": 100, "horizontal_align": "center"},
+          "elements": [
+            {
+              "id": "fairy_hero_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "Magic in Every Corner", "header_size": "h1", "align": "center", "color": "#ffffff"}
+            },
+            {
+              "id": "fairy_hero_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p style=\"color:#ffffff;\">Immerse your garden in layered pathways, sparkling lighting, and bespoke cement details.</p>", "align": "center"}
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "fairy_gallery",
+      "elType": "section",
+      "settings": {"padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}},
+      "elements": [
+        {
+          "id": "fairy_gallery_column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "fairy_gallery_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "Gallery Carousel", "header_size": "h2", "align": "center"}
+            },
+            {
+              "id": "fairy_gallery_carousel",
+              "elType": "widget",
+              "widgetType": "image-carousel",
+              "settings": {
+                "slides": [
+                  {"_id": "fairy1", "image": {"url": "https://via.placeholder.com/900x600/ffd6eb/3a3a45?text=Fairy+Path"}},
+                  {"_id": "fairy2", "image": {"url": "https://via.placeholder.com/900x600/ffc0e0/3a3a45?text=Enchanted+Pond"}},
+                  {"_id": "fairy3", "image": {"url": "https://via.placeholder.com/900x600/ffb6d9/3a3a45?text=Night+Glow"}}
+                ],
+                "slides_to_show": "1",
+                "navigation": "both",
+                "autoplay": "yes",
+                "autoplay_speed": 4000,
+                "infinite": "yes"
+              }
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "fairy_inspiration",
+      "elType": "section",
+      "settings": {"padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}, "background_background": "classic", "background_color": "#fff6fb"},
+      "elements": [
+        {
+          "id": "fairy_inspiration_column",
+          "elType": "column",
+          "settings": {"_column_size": 100},
+          "elements": [
+            {
+              "id": "fairy_inspiration_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "Design Inspiration", "header_size": "h2", "align": "center"}
+            },
+            {
+              "id": "fairy_inspiration_posts",
+              "elType": "widget",
+              "widgetType": "posts",
+              "settings": {"columns": 3, "posts_per_page": 3, "pagination": "none"}
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "fairy_booking",
+      "elType": "section",
+      "settings": {"padding": {"unit": "px", "top": "80", "right": "0", "bottom": "80", "left": "0", "isLinked": false}},
+      "elements": [
+        {
+          "id": "fairy_booking_column",
+          "elType": "column",
+          "settings": {"_column_size": 100, "padding": {"unit": "px", "top": "20", "right": "20", "bottom": "20", "left": "20", "isLinked": true}},
+          "elements": [
+            {
+              "id": "fairy_booking_heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "Bring the Magic Home", "header_size": "h2", "align": "center"}
+            },
+            {
+              "id": "fairy_booking_text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>Reserve a consultation for a custom fairy garden design, complete with lighting plans and structural features.</p>", "align": "center"}
+            },
+            {
+              "id": "fairy_booking_button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {"text": "Bring the Magic Home", "align": "center", "link": {"url": "#contact"}, "size": "lg"}
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}
