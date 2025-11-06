@@ -1,0 +1,254 @@
+{
+  "version": "0.4",
+  "title": "Stories from the Studio",
+  "type": "page",
+  "content": [
+    {
+      "id": "featured-post",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff5f8"
+      },
+      "elements": [
+        {
+          "id": "featured-post-inner",
+          "elType": "section",
+          "isInner": true,
+          "settings": {
+            "structure": "50",
+            "gap": "wide"
+          },
+          "elements": [
+            {
+              "id": "featured-post-image-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 50
+              },
+              "elements": [
+                {
+                  "id": "featured-post-image",
+                  "elType": "widget",
+                  "widgetType": "image-box",
+                  "settings": {
+                    "image": {
+                      "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                    },
+                    "title_text": "Featured Story",
+                    "description_text": "Explore how we transformed a coastal cliffside into an illuminated sculpture walk.",
+                    "button_text": "Read Story",
+                    "link": {"url": "#featured-story"}
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            },
+            {
+              "id": "featured-post-text-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 50
+              },
+              "elements": [
+                {
+                  "id": "featured-post-heading",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Stories from the Studio",
+                    "header_size": "h1",
+                    "title_color": "#ff1493"
+                  },
+                  "elements": [],
+                  "isInner": true
+                },
+                {
+                  "id": "featured-post-text",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Get behind-the-scenes insight into our creative process, artisan techniques, and the gardens we curate.</p>"
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "latest-articles",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "latest-articles-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "latest-articles-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Latest Articles",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "latest-articles-posts",
+              "elType": "widget",
+              "widgetType": "posts",
+              "settings": {
+                "columns": "3",
+                "posts_post_type": "post",
+                "posts_title_tag": "h3"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "category-filters",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "40",
+          "right": "40",
+          "bottom": "40",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "category-filters-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "horizontal_align": "center"
+          },
+          "elements": [
+            {
+              "id": "category-filters-list",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {"text": "Inspiration", "url": {"url": "#"}, "icon": "fas fa-star"},
+                  {"text": "Restoration", "url": {"url": "#"}, "icon": "fas fa-tools"},
+                  {"text": "Design Tips", "url": {"url": "#"}, "icon": "fas fa-leaf"}
+                ],
+                "align": "center",
+                "icon_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "subscribe-cta",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#fff5f8",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "subscribe-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "subscribe-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Subscribe to Studio Dispatches",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "subscribe-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Receive limited edition release alerts, design tips, and VIP event invitations.</p>",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "subscribe-form",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[newsletter-signup id=\"studio\"]"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

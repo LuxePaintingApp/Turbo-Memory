@@ -1,0 +1,236 @@
+{
+  "version": "0.4",
+  "title": "Magic in Every Corner",
+  "type": "page",
+  "content": [
+    {
+      "id": "fairy-hero",
+      "elType": "section",
+      "settings": {
+        "content_width": "full",
+        "height": "min-height",
+        "min_height": {
+          "unit": "px",
+          "size": 480,
+          "sizes": []
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+        },
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(255,255,255,0.78)"
+      },
+      "elements": [
+        {
+          "id": "fairy-hero-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "vertical_align": "middle",
+            "horizontal_align": "center"
+          },
+          "elements": [
+            {
+              "id": "fairy-hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Magic in Every Corner",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "fairy-hero-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Create immersive fairy garden realms that inspire wonder and delight in every visitor.</p>",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "fairy-carousel",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "fairy-carousel-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "fairy-carousel-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Gallery Carousel",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "fairy-carousel-widget",
+              "elType": "widget",
+              "widgetType": "image-carousel",
+              "settings": {
+                "slides": [
+                  {"id": 1, "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80", "caption": "Forest Lighting"},
+                  {"id": 2, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80", "caption": "Water Feature"},
+                  {"id": 3, "url": "https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=1400&q=80", "caption": "Gnome Village"}
+                ],
+                "navigation": "both",
+                "slides_to_show": "1",
+                "slides_to_scroll": "1"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "design-inspiration",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#fff5f8",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "design-inspiration-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "design-inspiration-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Design Inspiration",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "design-inspiration-posts",
+              "elType": "widget",
+              "widgetType": "posts",
+              "settings": {
+                "columns": "3",
+                "posts_post_type": "post",
+                "posts_title_tag": "h3"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "fairy-booking",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "fairy-booking-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "fairy-booking-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Bring the Magic Home",
+                "header_size": "h2",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "fairy-booking-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Book a personalised design consultation to craft your signature fairy garden experience.</p>",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "fairy-booking-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Bring the Magic Home",
+                "align": "center",
+                "size": "lg",
+                "background_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

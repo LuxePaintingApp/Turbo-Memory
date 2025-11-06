@@ -1,0 +1,215 @@
+{
+  "version": "0.4",
+  "title": "Let’s Create Together",
+  "type": "page",
+  "content": [
+    {
+      "id": "quote-form-section",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "padding": {
+          "unit": "px",
+          "top": "100",
+          "right": "40",
+          "bottom": "100",
+          "left": "40",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#fff5f8"
+      },
+      "elements": [
+        {
+          "id": "quote-form-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "quote-form-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Request a Quote",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "quote-form-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Share your project goals and our team will respond within two business days.</p>",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "quote-form-shortcode",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[contact-form-7 id=\"contact\" title=\"Quote Form\"]"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "map-section",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "map-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "map-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Visit Our Studio",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "map-shortcode",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[google-map address=\"18 Artisan Lane, Melbourne\"]"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "business-hours-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "business-hours-inner",
+          "elType": "section",
+          "isInner": true,
+          "settings": {
+            "structure": "50",
+            "gap": "wide"
+          },
+          "elements": [
+            {
+              "id": "hours-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 50
+              },
+              "elements": [
+                {
+                  "id": "hours-heading",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Business Hours",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": true
+                },
+                {
+                  "id": "hours-text",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p>Monday – Friday: 9am – 6pm<br>Saturday: 10am – 4pm<br>Sunday: By Appointment</p>"
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            },
+            {
+              "id": "social-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 50
+              },
+              "elements": [
+                {
+                  "id": "social-heading",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "title": "Connect With Us",
+                    "header_size": "h3"
+                  },
+                  "elements": [],
+                  "isInner": true
+                },
+                {
+                  "id": "social-icons",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {"text": "Instagram", "url": {"url": "https://instagram.com"}, "icon": "fab fa-instagram"},
+                      {"text": "Pinterest", "url": {"url": "https://pinterest.com"}, "icon": "fab fa-pinterest"},
+                      {"text": "Email", "url": {"url": "mailto:studio@solidcement.com"}, "icon": "fas fa-envelope"}
+                    ],
+                    "icon_color": "#ff1493"
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

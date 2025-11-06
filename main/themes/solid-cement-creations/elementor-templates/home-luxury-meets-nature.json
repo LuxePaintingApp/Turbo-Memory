@@ -1,0 +1,733 @@
+{
+  "version": "0.4",
+  "title": "Luxury Meets Nature",
+  "type": "page",
+  "content": [
+    {
+      "id": "hero-section",
+      "elType": "section",
+      "settings": {
+        "content_width": "full",
+        "padding": {
+          "unit": "px",
+          "top": "120",
+          "right": "60",
+          "bottom": "120",
+          "left": "60",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "box_shadow_box_shadow": "yes",
+        "box_shadow_box_shadow_type": "drop",
+        "box_shadow_box_shadow_position": "",
+        "box_shadow_box_shadow_color": "rgba(255,105,180,0.18)",
+        "box_shadow_box_shadow_blur": {
+          "unit": "px",
+          "size": 80,
+          "sizes": []
+        },
+        "box_shadow_box_shadow_spread": {
+          "unit": "px",
+          "size": 0,
+          "sizes": []
+        }
+      },
+      "elements": [
+        {
+          "id": "hero-column-left",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "30",
+              "bottom": "0",
+              "left": "30",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Handcrafted Luxury for Your Garden",
+                "header_size": "h1",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_family": "Breathing",
+                "typography_font_weight": "600",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "hero-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Discover bespoke garden art, gnomes, and water features that blend artisanal craftsmanship with luxurious design. Tailored for discerning outdoor spaces.</p>",
+                "align": "left",
+                "typography_typography": "custom",
+                "typography_font_family": "Breathing"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "hero-buttons",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "content_width": "boxed",
+                "gap": "extended"
+              },
+              "elements": [
+                {
+                  "id": "hero-button-column-1",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "hero-button-explore",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Explore Collections",
+                        "size": "lg",
+                        "align": "stretch",
+                        "button_css_id": "cta-explore",
+                        "background_color": "#ff1493",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Breathing"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                },
+                {
+                  "id": "hero-button-column-2",
+                  "elType": "column",
+                  "settings": {
+                    "_column_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "hero-button-quote",
+                      "elType": "widget",
+                      "widgetType": "button",
+                      "settings": {
+                        "text": "Get a Quote",
+                        "size": "lg",
+                        "align": "stretch",
+                        "button_css_id": "cta-quote",
+                        "background_color": "#ffffff",
+                        "border_border": "solid",
+                        "border_width": {
+                          "unit": "px",
+                          "top": "2",
+                          "right": "2",
+                          "bottom": "2",
+                          "left": "2",
+                          "isLinked": true
+                        },
+                        "border_color": "#ff1493",
+                        "text_color": "#ff1493",
+                        "typography_typography": "custom",
+                        "typography_font_family": "Breathing"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ],
+                  "isInner": true
+                }
+              ]
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "hero-column-right",
+          "elType": "column",
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "hero-carousel",
+              "elType": "widget",
+              "widgetType": "image-carousel",
+              "settings": {
+                "slides": [
+                  {
+                    "id": 1,
+                    "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80",
+                    "caption": "Luxurious Garden Gnomes"
+                  },
+                  {
+                    "id": 2,
+                    "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
+                    "caption": "Handcrafted Bird Baths"
+                  },
+                  {
+                    "id": 3,
+                    "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+                    "caption": "Sculptural Garden Landscapes"
+                  }
+                ],
+                "navigation": "both",
+                "pagination_position": "outside"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "signature-creations",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "structure": "33",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "signature-column-1",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "signature-imagebox-gnomes",
+              "elType": "widget",
+              "widgetType": "image-box",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=800&q=80"
+                },
+                "title_text": "Gnome World",
+                "description_text": "Limited edition characters finished with luminous glazes.",
+                "link": {
+                  "url": "#gnome-world"
+                },
+                "button_text": "Shop Gnomes"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "signature-column-2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "signature-imagebox-fairy",
+              "elType": "widget",
+              "widgetType": "image-box",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                },
+                "title_text": "Fairy Gardens",
+                "description_text": "Immersive miniature worlds designed for magic seekers.",
+                "link": {
+                  "url": "#fairy-garden"
+                },
+                "button_text": "View Installations"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "signature-column-3",
+          "elType": "column",
+          "settings": {
+            "_column_size": 33
+          },
+          "elements": [
+            {
+              "id": "signature-imagebox-designs",
+              "elType": "widget",
+              "widgetType": "image-box",
+              "settings": {
+                "image": {
+                  "url": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80"
+                },
+                "title_text": "Garden Designs",
+                "description_text": "Tailored landscapes balancing sculpture, planting, and water.",
+                "link": {
+                  "url": "#garden-designs"
+                },
+                "button_text": "Design Services"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "why-choose-us",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#fff0f5",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "why-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "why-iconboxes",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "25"
+              },
+              "elements": [
+                {
+                  "id": "why-iconbox-1",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-luxury",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title_text": "Luxurious Finishes",
+                        "description_text": "Premium pigments and sealants for long-lasting brilliance.",
+                        "icon": "fas fa-gem",
+                        "view": "stacked",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "why-iconbox-2",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-custom",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title_text": "Custom Designs",
+                        "description_text": "Work with our artists to sculpt pieces unique to your space.",
+                        "icon": "fas fa-drafting-compass",
+                        "view": "stacked",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "why-iconbox-3",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-aus",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "title_text": "Australian Made",
+                        "description_text": "Handcrafted locally with sustainable materials.",
+                        "icon": "fas fa-map-marker-alt",
+                        "view": "stacked",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "gallery-preview",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "0",
+          "bottom": "80",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "gallery-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gallery-widget",
+              "elType": "widget",
+              "widgetType": "image-gallery",
+              "settings": {
+                "gallery_layout": "grid",
+                "columns": "3",
+                "gallery": [
+                  {"id": 1, "url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 2, "url": "https://images.unsplash.com/photo-1470053055866-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 3, "url": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 4, "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 5, "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 6, "url": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80"}
+                ]
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "booking-teaser",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#fff5f8",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "booking-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "booking-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Transform Your Garden — Book a Custom Quote Today",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "booking-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Share your vision and we will craft a bespoke proposal with timelines, finishes, and styling guidance.</p>",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "booking-form",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[contact-form-7 id=\"quote\" title=\"Book a Quote\"]"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "testimonials",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "testimonials-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "testimonials-slides",
+              "elType": "widget",
+              "widgetType": "slides",
+              "settings": {
+                "slides": [
+                  {
+                    "heading": "\u2605\u2605\u2605\u2605\u2605",
+                    "description": "\"Our estate garden now feels like an art gallery. The craftsmanship is unmatched.\"",
+                    "button_text": "View Project",
+                    "button_url": "#project-1"
+                  },
+                  {
+                    "heading": "\u2605\u2605\u2605\u2605\u2605",
+                    "description": "\"Every guest asks about the gnome collection. The details are exquisite.\"",
+                    "button_text": "View Project",
+                    "button_url": "#project-2"
+                  },
+                  {
+                    "heading": "\u2605\u2605\u2605\u2605\u2605",
+                    "description": "\"From consultation to install, the team captured our vision perfectly.\"",
+                    "button_text": "View Project",
+                    "button_url": "#project-3"
+                  }
+                ]
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "blog-preview",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "blog-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "blog-widget",
+              "elType": "widget",
+              "widgetType": "posts",
+              "settings": {
+                "posts_post_type": "post",
+                "columns": "3",
+                "posts_title_tag": "h3"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "blog-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "View All Articles",
+                "align": "center",
+                "size": "md",
+                "button_css_id": "view-all-articles",
+                "background_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "footer-section",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#1f1f1f",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "40",
+          "bottom": "60",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "footer-columns",
+          "elType": "section",
+          "isInner": true,
+          "settings": {
+            "structure": "33"
+          },
+          "elements": [
+            {
+              "id": "footer-address-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "footer-address",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "editor": "<p style=\"color:#ffffff\">Solid Cement Creations<br>18 Artisan Lane<br>Melbourne, VIC</p>"
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            },
+            {
+              "id": "footer-social-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "footer-social",
+                  "elType": "widget",
+                  "widgetType": "icon-list",
+                  "settings": {
+                    "icon_list": [
+                      {"text": "Instagram", "url": {"url": "https://instagram.com"}, "icon": "fab fa-instagram"},
+                      {"text": "Pinterest", "url": {"url": "https://pinterest.com"}, "icon": "fab fa-pinterest"},
+                      {"text": "Facebook", "url": {"url": "https://facebook.com"}, "icon": "fab fa-facebook-f"}
+                    ],
+                    "text_color": "#ffffff",
+                    "icon_color": "#ff1493"
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            },
+            {
+              "id": "footer-feedback-column",
+              "elType": "column",
+              "isInner": true,
+              "settings": {
+                "_column_size": 33
+              },
+              "elements": [
+                {
+                  "id": "footer-feedback-button",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Leave Feedback",
+                    "align": "right",
+                    "size": "sm",
+                    "button_css_id": "feedback-button",
+                    "background_color": "#ff1493"
+                  },
+                  "elements": [],
+                  "isInner": true
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

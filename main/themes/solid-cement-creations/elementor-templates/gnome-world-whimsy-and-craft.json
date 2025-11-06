@@ -1,0 +1,376 @@
+{
+  "version": "0.4",
+  "title": "Whimsy and Craft",
+  "type": "page",
+  "content": [
+    {
+      "id": "gnome-hero",
+      "elType": "section",
+      "settings": {
+        "content_width": "full",
+        "height": "min-height",
+        "min_height": {
+          "unit": "px",
+          "size": 520,
+          "sizes": []
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://images.unsplash.com/photo-1523419409543-0c1df022bdd1?auto=format&fit=crop&w=1600&q=80"
+        },
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "rgba(255,20,147,0.68)",
+        "background_overlay_color_b": "rgba(255,255,255,0.75)",
+        "background_overlay_gradient_type": "radial"
+      },
+      "elements": [
+        {
+          "id": "gnome-hero-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "horizontal_align": "center",
+            "vertical_align": "middle"
+          },
+          "elements": [
+            {
+              "id": "gnome-hero-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Whimsy and Craft",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ffffff"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "gnome-hero-sub",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color:#ffffff\">Discover signature gnome collections infused with personality, patina, and storybook wonder.</p>",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "featured-collections",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "featured-heading",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "featured-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Featured Collections",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "featured-inner",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "33",
+                "gap": "extended"
+              },
+              "elements": [
+                {
+                  "id": "collection-heritage",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "collection-heritage-box",
+                      "elType": "widget",
+                      "widgetType": "image-box",
+                      "settings": {
+                        "image": {
+                          "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+                        },
+                        "title_text": "Heritage Guardians",
+                        "description_text": "Classic silhouettes with aged bronze finishes.",
+                        "button_text": "Request Quote",
+                        "link": {"url": "#heritage-guardians"}
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "collection-lumina",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "collection-lumina-box",
+                      "elType": "widget",
+                      "widgetType": "image-box",
+                      "settings": {
+                        "image": {
+                          "url": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80"
+                        },
+                        "title_text": "Lumina Sentinels",
+                        "description_text": "Embedded lighting highlights exquisite detailing.",
+                        "button_text": "Request Quote",
+                        "link": {"url": "#lumina-sentinels"}
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "collection-whimsy",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 33
+                  },
+                  "elements": [
+                    {
+                      "id": "collection-whimsy-box",
+                      "elType": "widget",
+                      "widgetType": "image-box",
+                      "settings": {
+                        "image": {
+                          "url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+                        },
+                        "title_text": "Storybook Originals",
+                        "description_text": "Hand-painted motifs for collectors and stylists.",
+                        "button_text": "Request Quote",
+                        "link": {"url": "#storybook-originals"}
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "custom-gnomes",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#fff5f8",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "custom-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "custom-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Custom Gnomes",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "custom-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Collaborate with our sculptors to design a bespoke guardian for your garden. Choose expressions, finishes, and even embedded lighting or water features.</p>",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "custom-button",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Design Your Own Gnome",
+                "align": "center",
+                "size": "lg",
+                "background_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "gnome-testimonials",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "gnome-testimonials-heading",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "gnome-testimonials-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Collector Testimonials",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "gnome-testimonials-inner",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "50",
+                "gap": "wide"
+              },
+              "elements": [
+                {
+                  "id": "testimonial-one",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "testimonial-one-image",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=400&q=80"
+                        },
+                        "image_size": "medium"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    },
+                    {
+                      "id": "testimonial-one-text",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>\"Our Lumina Sentinels glow softly each evening. They bring so much warmth to our courtyard.\"<br><strong>— Harper Residence</strong></p>"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "testimonial-two",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 50
+                  },
+                  "elements": [
+                    {
+                      "id": "testimonial-two-image",
+                      "elType": "widget",
+                      "widgetType": "image",
+                      "settings": {
+                        "image": {
+                          "url": "https://images.unsplash.com/photo-1438109491414-7198515b166b?auto=format&fit=crop&w=400&q=80"
+                        },
+                        "image_size": "medium"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    },
+                    {
+                      "id": "testimonial-two-text",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "editor": "<p>\"The Storybook Originals set sparks conversation at every event. The finish is impeccable.\"<br><strong>— Sinclair Garden Estate</strong></p>"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

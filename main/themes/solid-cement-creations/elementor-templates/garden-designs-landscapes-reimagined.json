@@ -1,0 +1,337 @@
+{
+  "version": "0.4",
+  "title": "Landscapes Reimagined",
+  "type": "page",
+  "content": [
+    {
+      "id": "designs-intro",
+      "elType": "section",
+      "settings": {
+        "content_width": "boxed",
+        "padding": {
+          "unit": "px",
+          "top": "140",
+          "right": "60",
+          "bottom": "140",
+          "left": "60",
+          "isLinked": false
+        },
+        "background_background": "classic",
+        "background_image": {
+          "url": "https://images.unsplash.com/photo-1470053055866-98d2b5aba04b?auto=format&fit=crop&w=1600&q=80"
+        },
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(255,255,255,0.85)"
+      },
+      "elements": [
+        {
+          "id": "designs-intro-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "designs-intro-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Landscapes Reimagined",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "designs-intro-text",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>From sculptural courtyards to expansive estate plans, our team orchestrates every detail for immersive outdoor living.</p>",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "designs-portfolio",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "portfolio-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "portfolio-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Portfolio Gallery",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "portfolio-gallery",
+              "elType": "widget",
+              "widgetType": "image-gallery",
+              "settings": {
+                "gallery_layout": "grid",
+                "columns": "3",
+                "gallery": [
+                  {"id": 1, "url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 2, "url": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 3, "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 4, "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 5, "url": "https://images.unsplash.com/photo-1470053055866-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"},
+                  {"id": 6, "url": "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80"}
+                ]
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "portfolio-filter",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[gallery-filter categories=\"gnomes,water,landscape,lighting\"]"
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "design-process",
+      "elType": "section",
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#fff5f8",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "process-heading",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "process-title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Design Process",
+                "align": "center",
+                "title_color": "#ff1493"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "process-inner",
+              "elType": "section",
+              "isInner": true,
+              "settings": {
+                "structure": "25",
+                "gap": "wide"
+              },
+              "elements": [
+                {
+                  "id": "process-consult",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-consult",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-comments",
+                        "title_text": "Consult",
+                        "description_text": "We uncover your vision, priorities, and practical needs.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "process-design",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-design",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-pencil-ruler",
+                        "title_text": "Design",
+                        "description_text": "Detailed plans blend planting, sculpture, and lighting.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "process-create",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-create",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-hammer",
+                        "title_text": "Create",
+                        "description_text": "Our artisans fabricate and finish every element in-house.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                },
+                {
+                  "id": "process-install",
+                  "elType": "column",
+                  "isInner": true,
+                  "settings": {
+                    "_column_size": 25
+                  },
+                  "elements": [
+                    {
+                      "id": "iconbox-install",
+                      "elType": "widget",
+                      "widgetType": "icon-box",
+                      "settings": {
+                        "icon": "fas fa-truck-moving",
+                        "title_text": "Install",
+                        "description_text": "White-glove installation with meticulous attention to detail.",
+                        "icon_color": "#ff1493"
+                      },
+                      "elements": [],
+                      "isInner": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "client-stories",
+      "elType": "section",
+      "settings": {
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "right": "40",
+          "bottom": "80",
+          "left": "40",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "client-stories-column",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "client-stories-heading",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Client Success Stories",
+                "align": "center"
+              },
+              "elements": [],
+              "isInner": false
+            },
+            {
+              "id": "client-stories-slides",
+              "elType": "widget",
+              "widgetType": "slides",
+              "settings": {
+                "slides": [
+                  {
+                    "heading": "Estate Transformation",
+                    "description": "\"Solid Cement Creations delivered a multi-zone paradise with sculptural water features.\"",
+                    "button_text": "Watch Video",
+                    "button_url": "https://vimeo.com/"
+                  },
+                  {
+                    "heading": "Urban Courtyard",
+                    "description": "\"The team maximised our compact space with tiered planting and bespoke seating.\"",
+                    "button_text": "View Gallery",
+                    "button_url": "#urban"
+                  }
+                ]
+              },
+              "elements": [],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}
