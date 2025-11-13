@@ -1,0 +1,358 @@
+/*
+Theme Name: SolveIT Sales Page Demo
+Theme URI: https://solveit.example
+Description: Lightweight Elementor-compatible landing page for SolveIT problem solving services.
+Author: SolveIT
+Version: 1.0.0
+License: MIT
+Text Domain: solveit-sales-page
+*/
+
+:root {
+    --bg: #f4f5fb;
+    --bg-dark: #101433;
+    --bg-card: #ffffff;
+    --accent: #5b5cfd;
+    --accent-light: rgba(91, 92, 253, 0.12);
+    --text: #1d1f2f;
+    --muted: #5b5d72;
+    --border: rgba(16, 20, 51, 0.08);
+    --shadow: 0 15px 45px rgba(16, 20, 51, 0.12);
+    --radius-lg: 28px;
+    --radius-md: 20px;
+    --radius-sm: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.container {
+    width: min(1100px, 92vw);
+    margin: 0 auto;
+}
+
+.container.narrow {
+    width: min(860px, 92vw);
+}
+
+.hero {
+    position: relative;
+    padding: clamp(5rem, 8vw, 7rem) 0 6rem;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--bg-dark), #252a56);
+    color: #fff;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.hero__badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    padding: 0.5rem 1.1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.hero__title {
+    font-size: clamp(2.5rem, 6vw, 3.4rem);
+    margin: 0;
+}
+
+.hero__subtitle {
+    font-size: 1.08rem;
+    max-width: 560px;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0;
+}
+
+.hero__bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(91, 92, 253, 0.4), transparent 60%),
+                radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.2), transparent 60%),
+                radial-gradient(circle at 40% 100%, rgba(91, 92, 253, 0.3), transparent 55%);
+    opacity: 0.9;
+}
+
+.section {
+    padding: clamp(4rem, 7vw, 5.5rem) 0;
+}
+
+.section__header {
+    display: grid;
+    gap: 0.6rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.section__title {
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    margin: 0;
+}
+
+.section__subtitle {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.section__copy {
+    font-size: 1.09rem;
+    color: var(--muted);
+}
+
+.section--cards {
+    background: linear-gradient(180deg, rgba(91, 92, 253, 0.08), transparent 60%);
+}
+
+.card-grid {
+    display: grid;
+    gap: 1.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
+    display: grid;
+    gap: 1.1rem;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 1.35rem;
+}
+
+.card__list {
+    margin: 0;
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.6rem;
+    color: var(--muted);
+}
+
+.card__list li {
+    list-style: disc;
+}
+
+.section--pricing {
+    background: linear-gradient(180deg, rgba(16, 20, 51, 0.04), transparent 50%);
+}
+
+.pricing-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.pricing-card {
+    position: relative;
+}
+
+.pricing-card__price {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--muted);
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.pricing-card__addon {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.98rem;
+    color: var(--muted);
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.85rem 1.8rem;
+    border-radius: 999px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn--primary {
+    background: var(--accent);
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(91, 92, 253, 0.4);
+}
+
+.btn--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(91, 92, 253, 0.35);
+}
+
+.btn--ghost {
+    background: rgba(16, 20, 51, 0.06);
+    color: var(--text);
+}
+
+.btn--ghost:hover {
+    background: rgba(16, 20, 51, 0.12);
+}
+
+.testimonial-grid {
+    display: grid;
+    gap: 1.6rem;
+}
+
+.testimonial {
+    background: var(--bg-card);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+
+.testimonial blockquote {
+    margin: 0 0 1rem;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.testimonial figcaption {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.faq {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.faq__item {
+    background: rgba(91, 92, 253, 0.06);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem 1.8rem;
+}
+
+.faq__question {
+    margin: 0 0 0.6rem;
+    font-size: 1.15rem;
+}
+
+.faq__answer {
+    margin: 0;
+    color: var(--muted);
+}
+
+.footer {
+    background: var(--bg-dark);
+    color: rgba(255, 255, 255, 0.78);
+    padding: 3rem 0;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 0.08em;
+}
+
+.footer__links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__links a {
+    color: rgba(255, 255, 255, 0.78);
+    font-weight: 500;
+}
+
+.footer__links a:hover {
+    color: #fff;
+}
+
+.footer__note {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: clamp(6rem, 10vw, 9rem) 0 7rem;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .footer__content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero__subtitle {
+        font-size: 1rem;
+    }
+
+    .card,
+    .testimonial,
+    .faq__item {
+        padding: 1.6rem;
+    }
+
+    .footer__links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
