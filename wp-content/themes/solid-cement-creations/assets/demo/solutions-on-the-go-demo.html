@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solutions On The Go &mdash; Demo Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Breathing&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --solidcement-pink: #ff3fa4;
+            --solidcement-deep-pink: #d92285;
+            --solidcement-gray: #f4f4f6;
+            --solidcement-dark-gray: #3a3a45;
+            --solidcement-white: #ffffff;
+            --solidcement-gold: #c9a857;
+            --solidcement-max-width: 1200px;
+            --solidcement-radius: 22px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Breathing', 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            background: var(--solidcement-gray);
+            color: var(--solidcement-dark-gray);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.85rem 2.6rem;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--solidcement-pink), var(--solidcement-deep-pink));
+            color: var(--solidcement-white);
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(217, 34, 133, 0.25);
+        }
+
+        .container {
+            width: min(90%, var(--solidcement-max-width));
+            margin: 0 auto;
+        }
+
+        section {
+            padding: clamp(3rem, 6vw, 5rem) 0;
+        }
+
+        .sotg-hero {
+            background: radial-gradient(circle at top left, rgba(255, 63, 164, 0.25), transparent 55%),
+                linear-gradient(135deg, var(--solidcement-pink) 0%, var(--solidcement-deep-pink) 80%);
+            color: var(--solidcement-white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sotg-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
+            opacity: 0.35;
+            pointer-events: none;
+        }
+
+        .sotg-hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .sotg-kicker {
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .sotg-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            margin-bottom: 1rem;
+        }
+
+        .sotg-subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            margin: 0 auto 2rem;
+            max-width: 640px;
+        }
+
+        .sotg-cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .sotg-guarantee {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .sotg-trust-signals {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .sotg-problem-scenarios {
+            background: var(--solidcement-white);
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            text-align: center;
+        }
+
+        .sotg-scenario-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .sotg-scenario-card,
+        .sotg-proof blockquote,
+        .sotg-faq article {
+            background: var(--solidcement-white);
+            border-radius: var(--solidcement-radius);
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(58, 58, 69, 0.08);
+        }
+
+        .sotg-offer {
+            background: linear-gradient(135deg, rgba(255, 63, 164, 0.08), rgba(201, 168, 87, 0.12));
+        }
+
+        .sotg-offer-card {
+            background: var(--solidcement-white);
+            border-radius: calc(var(--solidcement-radius) * 1.2);
+            padding: clamp(2.5rem, 6vw, 4rem);
+            box-shadow: 0 25px 45px rgba(217, 34, 133, 0.12);
+            display: grid;
+            gap: 2rem;
+        }
+
+        .sotg-offer-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 63, 164, 0.12);
+            color: var(--solidcement-deep-pink);
+            border-radius: 999px;
+            padding: 0.5rem 1.25rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-size: 0.75rem;
+        }
+
+        .sotg-steps {
+            display: grid;
+            gap: 1.5rem;
+            counter-reset: sotg-steps;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sotg-steps li {
+            background: linear-gradient(135deg, rgba(255, 63, 164, 0.08), rgba(255, 255, 255, 0.95));
+            border-radius: var(--solidcement-radius);
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sotg-steps li::before {
+            counter-increment: sotg-steps;
+            content: counter(sotg-steps);
+            position: absolute;
+            top: 1.25rem;
+            right: 1.5rem;
+            font-size: 3rem;
+            font-weight: 700;
+            color: rgba(217, 34, 133, 0.15);
+        }
+
+        .sotg-price-callout {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .sotg-price-kicker {
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--solidcement-deep-pink);
+        }
+
+        .sotg-price-main {
+            font-size: clamp(1.75rem, 3vw, 2.2rem);
+            margin: 0;
+        }
+
+        .sotg-price-note {
+            max-width: 28rem;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .sotg-proof {
+            background: var(--solidcement-white);
+        }
+
+        .sotg-proof-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .sotg-proof cite {
+            display: block;
+            margin-top: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            color: var(--solidcement-deep-pink);
+        }
+
+        .sotg-intake {
+            background: linear-gradient(135deg, rgba(58, 58, 69, 0.92), rgba(58, 58, 69, 0.75));
+            color: var(--solidcement-white);
+        }
+
+        .sotg-intake-inner {
+            display: grid;
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        .sotg-intake-copy h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-top: 0.75rem;
+        }
+
+        .sotg-intake-points {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .sotg-intake-points li::before {
+            content: '✔';
+            margin-right: 0.75rem;
+            color: var(--solidcement-gold);
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-control label {
+            font-weight: 600;
+        }
+
+        .form-control input,
+        .form-control textarea,
+        .form-control select {
+            padding: 0.85rem 1rem;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            font-size: 1rem;
+        }
+
+        .form-control textarea {
+            min-height: 140px;
+        }
+
+        .sotg-form {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: var(--solidcement-radius);
+            padding: clamp(2rem, 5vw, 3rem);
+            backdrop-filter: blur(6px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+        }
+
+        .sotg-form .btn {
+            width: 100%;
+        }
+
+        .sotg-form-footer {
+            font-size: 0.85rem;
+            text-align: center;
+            opacity: 0.85;
+            margin-top: 1rem;
+        }
+
+        .sotg-faq {
+            background: var(--solidcement-white);
+        }
+
+        .sotg-faq-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .sotg-extra-content {
+            background: var(--solidcement-gray);
+            padding: clamp(2.5rem, 5vw, 4rem) 0;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            padding: 2rem 0 3rem;
+            color: rgba(255, 255, 255, 0.8);
+            background: #2b2b32;
+        }
+
+        @media (min-width: 640px) {
+            .sotg-trust-signals {
+                flex-direction: row;
+                justify-content: center;
+                gap: 2rem;
+            }
+
+            .sotg-price-callout {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .sotg-scenario-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .sotg-proof-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .sotg-faq-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .sotg-intake-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .sotg-offer-card {
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+            }
+
+            .sotg-offer-card h2 {
+                grid-column: 1 / -1;
+            }
+
+            .sotg-steps {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="sotg-landing-page">
+        <section class="sotg-hero">
+            <div class="container">
+                <p class="sotg-kicker">Got a problem with no solution?</p>
+                <h1 class="sotg-title">Solutions On The Go</h1>
+                <p class="sotg-subtitle">We deliver simple, actionable answers to your toughest problems within 3 hours — your first solution is on us.</p>
+                <div class="sotg-cta">
+                    <a class="btn" href="#sotg-intake-form">Get My Free Solution</a>
+                    <span class="sotg-guarantee">Need it faster? Express replies in 30 minutes for just $20.</span>
+                </div>
+                <div class="sotg-trust-signals">
+                    <span>✔ First solution free</span>
+                    <span>✔ 3-hour turnaround guarantee</span>
+                    <span>✔ Human experts, no bots</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="sotg-problem-scenarios">
+            <div class="container">
+                <h2 class="section-title">When life gets complicated, we make the next step obvious.</h2>
+                <div class="sotg-scenario-grid">
+                    <article class="sotg-scenario-card">
+                        <h3>Personal dilemmas</h3>
+                        <p>From tough conversations to daily routines, we craft action plans that bring clarity fast.</p>
+                    </article>
+                    <article class="sotg-scenario-card">
+                        <h3>Workplace challenges</h3>
+                        <p>Navigate sticky projects, prepare responses, or plan your next move with confidence.</p>
+                    </article>
+                    <article class="sotg-scenario-card">
+                        <h3>Everyday &ldquo;how do I&rdquo; questions</h3>
+                        <p>We break big tasks into simple steps so you can take action immediately.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="sotg-offer">
+            <div class="container">
+                <div class="sotg-offer-card">
+                    <span class="sotg-offer-badge">Fast. Friendly. Focused on solutions.</span>
+                    <h2>Here’s how Solutions On The Go works</h2>
+                    <ol class="sotg-steps">
+                        <li>
+                            <h3>Tell us your problem</h3>
+                            <p>Submit your situation in a simple form — the more detail you give, the better we can help.</p>
+                        </li>
+                        <li>
+                            <h3>We craft your action plan</h3>
+                            <p>A real human strategist reviews your request and builds a step-by-step response within 3 hours.</p>
+                        </li>
+                        <li>
+                            <h3>You get moving again</h3>
+                            <p>Receive a clear, prioritized solution by email. Ask a quick follow-up if you need extra clarity.</p>
+                        </li>
+                    </ol>
+                    <div class="sotg-price-callout">
+                        <div>
+                            <p class="sotg-price-kicker">Intro offer</p>
+                            <p class="sotg-price-main">First solution free</p>
+                            <p class="sotg-price-note">Every solution after that is just $50 — or add $20 to jump the line for a 30 minute turnaround.</p>
+                        </div>
+                        <a class="btn" href="#sotg-intake-form">Start Solving Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sotg-proof">
+            <div class="container">
+                <h2 class="section-title">Real people. Real momentum.</h2>
+                <div class="sotg-proof-grid">
+                    <blockquote>
+                        <p>&ldquo;I was stuck on how to respond to a difficult client. Within two hours I had a script that saved the project.&rdquo;</p>
+                        <cite>&mdash; Monica, marketing consultant</cite>
+                    </blockquote>
+                    <blockquote>
+                        <p>&ldquo;They broke down my stressful move into a weekend checklist. I actually enjoyed getting it done.&rdquo;</p>
+                        <cite>&mdash; Andre, busy parent</cite>
+                    </blockquote>
+                    <blockquote>
+                        <p>&ldquo;The express add-on was worth every dollar. 25 minutes later I had a plan ready to present to leadership.&rdquo;</p>
+                        <cite>&mdash; Priya, operations lead</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="sotg-intake" id="sotg-intake-form">
+            <div class="container">
+                <div class="sotg-intake-inner">
+                    <div class="sotg-intake-copy">
+                        <span class="sotg-kicker">Ready when you are</span>
+                        <h2>Tell us what’s going on — we’ll handle the next step.</h2>
+                        <ul class="sotg-intake-points">
+                            <li>Free for your first problem — risk free and no strings attached.</li>
+                            <li>Standard delivery within 3 hours, guaranteed.</li>
+                            <li>Need speed? Tick the express option for a 30 minute solution at $20.</li>
+                        </ul>
+                    </div>
+                    <form class="sotg-form">
+                        <div class="form-control">
+                            <label for="demo-name">Your name</label>
+                            <input type="text" id="demo-name" placeholder="How should we address you?">
+                        </div>
+                        <div class="form-control">
+                            <label for="demo-email">Email for your solution</label>
+                            <input type="email" id="demo-email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-control">
+                            <label for="demo-problem">Describe your problem</label>
+                            <textarea id="demo-problem" placeholder="Share the context, what you’ve tried, and what a win looks like."></textarea>
+                        </div>
+                        <div class="form-control">
+                            <label for="demo-priority">How fast do you need help?</label>
+                            <select id="demo-priority">
+                                <option>Standard (Free for first, $50 afterward)</option>
+                                <option>Express (+$20) — reply within 30 minutes</option>
+                            </select>
+                        </div>
+                        <div class="form-control">
+                            <label for="demo-outcome">What outcome would feel like a win?</label>
+                            <input type="text" id="demo-outcome" placeholder="E.g. “Have a ready-to-send email” or “Know my next three steps”">
+                        </div>
+                        <button type="button" class="btn">Send My Problem</button>
+                        <p class="sotg-form-footer">Demo form only — submissions are disabled in this preview.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="sotg-faq">
+            <div class="container">
+                <h2 class="section-title">Questions? We have answers.</h2>
+                <div class="sotg-faq-grid">
+                    <article>
+                        <h3>What kinds of problems can you solve?</h3>
+                        <p>We specialize in practical, real-world challenges: tricky conversations, planning a project, mapping steps, and clarifying decisions. If we can’t help, we’ll tell you upfront.</p>
+                    </article>
+                    <article>
+                        <h3>How do I receive my solution?</h3>
+                        <p>Your tailored response arrives via email with a clear action plan, scripts, or checklists — whatever fits your situation.</p>
+                    </article>
+                    <article>
+                        <h3>What happens after my free solution?</h3>
+                        <p>Every request after your first is $50. You can always add the $20 express upgrade for a guaranteed reply within 30 minutes.</p>
+                    </article>
+                    <article>
+                        <h3>Can I follow up with questions?</h3>
+                        <p>Absolutely. Each solution includes a quick follow-up so you can move forward confidently.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © Solutions On The Go. Demo preview file for mobile testing.
+    </footer>
+</body>
+</html>

@@ -1098,3 +1098,313 @@ body.nav-open .site-header__overlay {
         font-size: 2.2rem;
     }
 }
+
+
+/* Solutions On The Go Landing Page */
+.sotg-landing-page {
+    background: var(--solidcement-gray);
+}
+
+.sotg-landing-page section {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.sotg-hero {
+    background: radial-gradient(circle at top left, rgba(255, 63, 164, 0.25), transparent 55%),
+        linear-gradient(135deg, var(--solidcement-pink) 0%, var(--solidcement-deep-pink) 80%);
+    color: var(--solidcement-white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sotg-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.sotg-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.sotg-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: 1rem;
+}
+
+.sotg-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+    margin: 0 auto 2rem;
+    max-width: 640px;
+}
+
+.sotg-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.sotg-guarantee {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.sotg-trust-signals {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+.sotg-problem-scenarios {
+    background: var(--solidcement-white);
+}
+
+.sotg-scenario-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.sotg-scenario-card {
+    background: var(--solidcement-white);
+    border-radius: var(--solidcement-radius);
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(58, 58, 69, 0.08);
+}
+
+.sotg-scenario-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.sotg-offer {
+    background: linear-gradient(135deg, rgba(255, 63, 164, 0.08), rgba(201, 168, 87, 0.12));
+}
+
+.sotg-offer-card {
+    background: var(--solidcement-white);
+    border-radius: calc(var(--solidcement-radius) * 1.2);
+    padding: clamp(2.5rem, 6vw, 4rem);
+    box-shadow: 0 25px 45px rgba(217, 34, 133, 0.12);
+    display: grid;
+    gap: 2rem;
+}
+
+.sotg-offer-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 63, 164, 0.12);
+    color: var(--solidcement-deep-pink);
+    border-radius: 999px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+}
+
+.sotg-steps {
+    display: grid;
+    gap: 1.5rem;
+    counter-reset: sotg-steps;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sotg-steps li {
+    background: linear-gradient(135deg, rgba(255, 63, 164, 0.08), rgba(255, 255, 255, 0.95));
+    border-radius: var(--solidcement-radius);
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.sotg-steps li::before {
+    counter-increment: sotg-steps;
+    content: counter(sotg-steps);
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(217, 34, 133, 0.15);
+}
+
+.sotg-price-callout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.sotg-price-kicker {
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--solidcement-deep-pink);
+}
+
+.sotg-price-main {
+    font-size: clamp(1.75rem, 3vw, 2.2rem);
+    margin: 0;
+}
+
+.sotg-price-note {
+    max-width: 28rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.sotg-proof {
+    background: var(--solidcement-white);
+}
+
+.sotg-proof-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.sotg-proof blockquote {
+    background: var(--solidcement-white);
+    border-radius: var(--solidcement-radius);
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(58, 58, 69, 0.08);
+    margin: 0;
+}
+
+.sotg-proof cite {
+    display: block;
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--solidcement-deep-pink);
+}
+
+.sotg-intake {
+    background: linear-gradient(135deg, rgba(58, 58, 69, 0.92), rgba(58, 58, 69, 0.75));
+    color: var(--solidcement-white);
+}
+
+.sotg-intake-inner {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.sotg-intake-copy h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-top: 0.75rem;
+}
+
+.sotg-intake-points {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.sotg-intake-points li::before {
+    content: '✔';
+    margin-right: 0.75rem;
+    color: var(--solidcement-gold);
+}
+
+.sotg-form {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--solidcement-radius);
+    padding: clamp(2rem, 5vw, 3rem);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+.sotg-form .btn {
+    width: 100%;
+}
+
+.sotg-form-footer {
+    font-size: 0.85rem;
+    text-align: center;
+    opacity: 0.85;
+    margin-top: 1rem;
+}
+
+.sotg-faq {
+    background: var(--solidcement-white);
+}
+
+.sotg-faq-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.sotg-faq article {
+    background: var(--solidcement-white);
+    border-radius: var(--solidcement-radius);
+    padding: 1.75rem;
+    box-shadow: 0 18px 38px rgba(58, 58, 69, 0.06);
+}
+
+.sotg-extra-content {
+    background: var(--solidcement-gray);
+}
+
+@media (min-width: 640px) {
+    .sotg-trust-signals {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .sotg-price-callout {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .sotg-scenario-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sotg-proof-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sotg-faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sotg-intake-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sotg-offer-card {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .sotg-offer-card h2 {
+        grid-column: 1 / -1;
+    }
+
+    .sotg-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
